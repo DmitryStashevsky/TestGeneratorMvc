@@ -1,0 +1,5 @@
+D:\Тренинг\TestGenerator\TestGenerator\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGenerator\TestGenerator\Model\bin\Debug\Model.dll
+D:\Тренинг\TestGenerator\TestGenerator\Model\bin\Debug\Model.pdb
+D:\Тренинг\TestGenerator\TestGenerator\Model\obj\Debug\Model.dll
+D:\Тренинг\TestGenerator\TestGenerator\Model\obj\Debug\Model.pdb

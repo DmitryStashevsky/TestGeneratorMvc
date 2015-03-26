@@ -1,0 +1,12 @@
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Implementations.dll.config
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Implementations.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Implementations.pdb
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Interfaces.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Model.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\EntityFramework.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Interfaces.pdb
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Model.pdb
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\EntityFramework.xml
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.pdb

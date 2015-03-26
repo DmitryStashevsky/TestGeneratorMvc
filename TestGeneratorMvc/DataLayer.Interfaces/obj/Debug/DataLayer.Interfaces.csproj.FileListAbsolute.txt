@@ -1,0 +1,14 @@
+D:\Тренинг\TestGenerator\TestGenerator\DataLayer.Interfaces\bin\Debug\DataLayer.Interfaces.dll
+D:\Тренинг\TestGenerator\TestGenerator\DataLayer.Interfaces\bin\Debug\DataLayer.Interfaces.pdb
+D:\Тренинг\TestGenerator\TestGenerator\DataLayer.Interfaces\bin\Debug\DataLayer.Model.dll
+D:\Тренинг\TestGenerator\TestGenerator\DataLayer.Interfaces\bin\Debug\DataLayer.Model.pdb
+D:\Тренинг\TestGenerator\TestGenerator\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGenerator\TestGenerator\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.dll
+D:\Тренинг\TestGenerator\TestGenerator\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.pdb
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug\DataLayer.Interfaces.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug\DataLayer.Interfaces.pdb
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug\DataLayer.Model.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug\DataLayer.Model.pdb
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.pdb
