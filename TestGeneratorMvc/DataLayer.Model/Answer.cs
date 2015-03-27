@@ -5,14 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Model
+namespace DataLayer.Model
 {
     public class Answer : BaseEntity
     {
-        [XmlAttribute("correct")]
         public bool IsCorrect { get; set; }
 
-        [XmlText]
         public string Text { get; set; }
 
         public Answer()

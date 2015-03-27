@@ -23,6 +23,7 @@ namespace DataLayer.Implementations.ApplicationDbContext
             modelBuilder.Configurations.Add(new TestMapping());
             modelBuilder.Configurations.Add(new UserAnswerMapping());
             modelBuilder.Configurations.Add(new UserMapping());
+            modelBuilder.Configurations.Add(new TagMapping());
         }
     }
 }

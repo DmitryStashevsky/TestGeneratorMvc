@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Model
+namespace DataLayer.Model
 {
     public class Test : BaseEntity
     {
@@ -18,8 +18,6 @@ namespace Model
             Users = new List<User>();
         }
 
-        [XmlArray("questions")]
-        [XmlArrayItem("question")]
         public List<Question> Questions { get; set; }
 
         public List<User> Users { get; set; }

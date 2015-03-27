@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace DataLayer.Model
 {
     public class User : BaseEntity
     {
@@ -19,6 +19,5 @@ namespace Model
 
         public List<Test> Tests { get; set; }
         public List<UserAnswer> UserAnswers { get; set; }
-
     }
 }

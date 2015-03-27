@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataLayer.Interfaces;
-using Model;
+using DataLayer.Model;
 
 namespace DataLayer.Implementations.Implementations
 {

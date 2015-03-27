@@ -49,12 +49,14 @@
     <Compile Include="Implementations\AnswerRepository.cs" />
     <Compile Include="Implementations\QuestionRepository.cs" />
     <Compile Include="Implementations\Repository.cs" />
+    <Compile Include="Implementations\TagRepository.cs" />
     <Compile Include="Implementations\TestRepository.cs" />
     <Compile Include="Implementations\UnitOfWork.cs" />
     <Compile Include="Implementations\UserAnswerRepository.cs" />
     <Compile Include="Implementations\UserRepository.cs" />
     <Compile Include="Mapping\AnswerMapping.cs" />
     <Compile Include="Mapping\QuestionMapping.cs" />
+    <Compile Include="Mapping\TagMapping.cs" />
     <Compile Include="Mapping\TestMapping.cs" />
     <Compile Include="Mapping\UserAnswerMapping.cs" />
     <Compile Include="Mapping\UserMapping.cs" />

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using DataLayer.Implementations.ApplicationDbContext;
 using DataLayer.Interfaces;
 
 namespace DataLayer.Implementations.Implementations
@@ -13,7 +14,7 @@ namespace DataLayer.Implementations.Implementations
     {
         private DbContext m_Context;
 
-        public UnitOfWork(DbContext context)
+        public UnitOfWork(TestGeneratorDbContext context)
         {
             m_Context = context;
         }

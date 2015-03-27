@@ -4,7 +4,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Model;
+using DataLayer.Model;
 
 namespace DataLayer.Implementations.Mapping
 {
@@ -18,7 +18,12 @@ namespace DataLayer.Implementations.Mapping
 
             Property(e => e.Description).IsRequired();
 
-            HasMany(e => e.Questions).WithRequired(e => e.Test).HasForeignKey(e => e.TestId).WillCascadeOnDelete();
+            HasMany(e => e.Questions).WithMany(e => e.Tests).Map(e =>
+                {
+                    e.ToTable("TestQuestion");
+                    e.MapLeftKey("TestId");
+                    e.MapRightKey("QuestionId");
+                });
 
             HasMany(e => e.Users).WithMany(e => e.Tests).Map(e =>
                 {
