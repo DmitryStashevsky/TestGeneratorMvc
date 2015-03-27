@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayer.Interfaces
+namespace BusinessLayer.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IQuestionImportService
     {
-        void SaveChanges();
-
-        T GetRepository<T>();
+        void Import(Stream stream);
     }
 }

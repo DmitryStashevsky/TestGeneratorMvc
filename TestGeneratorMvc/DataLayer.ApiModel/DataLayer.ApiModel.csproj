@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E802811-BF8F-4F76-9CC7-2BDE9177CE13}</ProjectGuid>
+    <ProjectGuid>{9A5A603A-A702-45C1-9CA9-0ACC213658D5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BusinessLayer.Interfaces</RootNamespace>
-    <AssemblyName>BusinessLayer.Interfaces</AssemblyName>
+    <RootNamespace>DataLayer.ApiModel</RootNamespace>
+    <AssemblyName>DataLayer.ApiModel</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,19 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IQuestionImportService.cs" />
-    <Compile Include="ITestCreateService.cs" />
+    <Compile Include="ApiBaseEntity.cs" />
+    <Compile Include="ApiQuestion.cs" />
+    <Compile Include="ApiCreateTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataLayer.ApiModel\DataLayer.ApiModel.csproj">
-      <Project>{9a5a603a-a702-45c1-9ca9-0acc213658d5}</Project>
-      <Name>DataLayer.ApiModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataLayer.Model\DataLayer.Model.csproj">
-      <Project>{6fd2f7a2-03d9-47c5-ac24-69482d1d290a}</Project>
-      <Name>DataLayer.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

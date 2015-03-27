@@ -20,8 +20,8 @@ namespace DataLayer.Implementations.Mapping
             Property(e => e.Rating).IsOptional();
             Property(e => e.Complexity).IsRequired();
 
-            Property(e => e.ValidFrom).IsRequired();
-            Property(e => e.ValidTo).IsOptional();
+            Property(e => e.ValidFrom).IsRequired().HasColumnType("datetime2");
+            Property(e => e.ValidTo).IsOptional().HasColumnType("datetime2");
 
             Property(e => e.IsValid).IsRequired();
 

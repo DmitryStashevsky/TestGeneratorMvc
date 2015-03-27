@@ -10,10 +10,10 @@ namespace DataLayer.Model
     public class Question : BaseEntity
     {
         public string Text { get; set; }
-        public int Rating { get; set; }
+        public int? Rating { get; set; }
         public int Complexity { get; set; }
 	    public DateTime ValidFrom { get ;set; }
-        public DateTime ValidTo { get ;set; }
+        public DateTime? ValidTo { get ;set; }
         public bool IsValid{ get ;set; }
 
         public Question() : base()
@@ -25,6 +25,7 @@ namespace DataLayer.Model
             Answers = new List<Answer>();
             UserAnswers = new List<UserAnswer>();
             Tests = new List<Test>();
+            Tags = new List<Tag>();
         }
 
         public List<Answer> Answers { get; set; }

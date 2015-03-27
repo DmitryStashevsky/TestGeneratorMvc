@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using BusinessLayer.Services.TestImport;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTests
@@ -13,7 +12,7 @@ namespace UnitTests
         {
             using (var stream = File.OpenRead("D://CSharp.xml"))
             {
-                TestImportService.Instance.Import(stream);
+                //TestImportService.Instance.Import(stream);
             }
         }
     }

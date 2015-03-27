@@ -14,7 +14,7 @@ namespace DataLayer.Implementations.Implementations
     {
         private DbContext m_Context;
 
-        public UnitOfWork(TestGeneratorDbContext context)
+        public UnitOfWork(DbContext context)
         {
             m_Context = context;
         }
@@ -24,7 +24,7 @@ namespace DataLayer.Implementations.Implementations
             m_Context.SaveChanges();
         }
 
-        public T GetRepository<T>() where T : class
+        public T GetRepository<T>()
         {
             return DependencyResolver.Current.GetService<T>();
         }
