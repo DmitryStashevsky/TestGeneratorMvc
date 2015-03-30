@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IQuestionCreateService.cs" />
     <Compile Include="IQuestionImportService.cs" />
+    <Compile Include="IQuestionViewService.cs" />
     <Compile Include="ITestCreateService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionCreateService.cs" />
     <Compile Include="QuestionImport\QuestionImportService.cs" />
+    <Compile Include="QuestionViewService.cs" />
     <Compile Include="TestCreateService.cs" />
   </ItemGroup>
   <ItemGroup>

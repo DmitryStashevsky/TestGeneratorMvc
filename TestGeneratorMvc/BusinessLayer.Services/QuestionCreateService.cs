@@ -7,30 +7,27 @@ using AutoMapper;
 using BusinessLayer.Interfaces;
 using DataLayer.ApiModel;
 using DataLayer.Interfaces;
+using DataLayer.Model;
 
 namespace BusinessLayer.Services
 {
-    public class TestCreateService : ITestCreateService
+    public class QuestionCreateService : IQuestionCreateService
     {
         private IUnitOfWork m_UnitOfWork;
         private IQuestionRepository m_QuestionRepository;
-        private ITestRepository m_TestRepository;
 
-        public TestCreateService(IUnitOfWork unitOfWork)
+        public QuestionCreateService(IUnitOfWork unitOfWork)
         {
             m_UnitOfWork = unitOfWork;
             m_QuestionRepository = m_UnitOfWork.GetRepository<IQuestionRepository>();
-            m_TestRepository = m_UnitOfWork.GetRepository<ITestRepository>();
         }
 
-        public List<ApiShowQuestion> GetQuestions()
+        public string AddQuestion(ApiCreateQuestion question)
         {
-            return Mapper.Map<List<ApiShowQuestion>>(m_QuestionRepository.GetAll());
-        }
-
-        public void CreateTest(ApiCreateTest test)
-        {
-            throw new NotImplementedException();
+            var s = new Question { Text = question.Text };
+            m_QuestionRepository.Create(s);
+            m_UnitOfWork.SaveChanges();
+            return "success";
         }
     }
 }

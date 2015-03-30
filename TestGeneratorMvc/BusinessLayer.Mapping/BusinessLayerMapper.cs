@@ -18,8 +18,10 @@ namespace BusinessLayer.Mapping
             Mapper.CreateMap<XmlQuestion, Question>();
             Mapper.CreateMap<XmlTest, Test>();
 
-            Mapper.CreateMap<ApiQuestion, Question>();
-            Mapper.CreateMap<Question, ApiQuestion>();
+            Mapper.CreateMap<ApiCreateQuestion, Question>();
+            Mapper.CreateMap<Question, ApiShowQuestion>()
+                .ForMember(d => d.ValidFrom, s => s.MapFrom(src => src.ValidFrom.ToShortDateString()))
+                .ForMember(d => d.ValidTo, s => s.MapFrom(src => (src.ValidTo.HasValue) ? src.ValidTo.Value.ToShortDateString() : ""));
         }
     }
 }

@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataLayer.ApiModel
 {
-    public class ApiQuestion : ApiBaseEntity
+    public class ApiShowQuestion : ApiBaseEntity
     {
         public string Text { get; set; }
         public int? Rating { get; set; }
         public int Complexity { get; set; }
-        public DateTime ValidFrom { get; set; }
+        public string ValidFrom { get; set; }
+        public string ValidTo { get; set; }
+        public bool IsValid { get; set; }
     }
 }

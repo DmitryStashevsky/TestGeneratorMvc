@@ -7,10 +7,8 @@ using DataLayer.ApiModel;
 
 namespace BusinessLayer.Interfaces
 {
-    public interface ITestCreateService
+    public interface IQuestionCreateService
     {
-        List<ApiShowQuestion> GetQuestions();
-
-        void CreateTest(ApiCreateTest test);
+        string AddQuestion(ApiCreateQuestion question);
     }
 }

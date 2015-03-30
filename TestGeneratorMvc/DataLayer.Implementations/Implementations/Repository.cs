@@ -45,5 +45,13 @@ namespace DataLayer.Implementations.Implementations
         {
             return m_Context.Set<T>().ToList();
         }
+
+        public int Count
+        {
+            get
+            {
+                return m_Context.Set<T>().Count();
+            }
+        }
     }
 }

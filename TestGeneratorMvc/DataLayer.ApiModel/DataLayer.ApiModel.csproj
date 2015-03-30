@@ -40,7 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiBaseEntity.cs" />
-    <Compile Include="ApiQuestion.cs" />
+    <Compile Include="ApiCreateQuestion.cs" />
+    <Compile Include="ApiShowQuestion.cs" />
     <Compile Include="ApiCreateTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

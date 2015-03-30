@@ -10,17 +10,15 @@ using DataLayer.Interfaces;
 
 namespace BusinessLayer.Services
 {
-    public class TestCreateService : ITestCreateService
+    public class QuestionViewService : IQuestionViewService
     {
         private IUnitOfWork m_UnitOfWork;
         private IQuestionRepository m_QuestionRepository;
-        private ITestRepository m_TestRepository;
 
-        public TestCreateService(IUnitOfWork unitOfWork)
+        public QuestionViewService(IUnitOfWork unitOfWork)
         {
             m_UnitOfWork = unitOfWork;
             m_QuestionRepository = m_UnitOfWork.GetRepository<IQuestionRepository>();
-            m_TestRepository = m_UnitOfWork.GetRepository<ITestRepository>();
         }
 
         public List<ApiShowQuestion> GetQuestions()
@@ -28,9 +26,9 @@ namespace BusinessLayer.Services
             return Mapper.Map<List<ApiShowQuestion>>(m_QuestionRepository.GetAll());
         }
 
-        public void CreateTest(ApiCreateTest test)
+        public int GetQuestionsCount()
         {
-            throw new NotImplementedException();
+            return m_QuestionRepository.Count;
         }
     }
 }

@@ -17,5 +17,7 @@ namespace DataLayer.Interfaces
         T GetById(Guid id);
 
         List<T> GetAll();
+
+        int Count { get; }
     }
 }
