@@ -23,7 +23,7 @@ namespace BusinessLayer.Services
 
         public List<ApiShowQuestion> GetQuestions()
         {
-            return Mapper.Map<List<ApiShowQuestion>>(m_QuestionRepository.GetAll());
+            return Mapper.Map<List<ApiShowQuestion>>(m_QuestionRepository.GetAllWithTag());
         }
 
         public int GetQuestionsCount()

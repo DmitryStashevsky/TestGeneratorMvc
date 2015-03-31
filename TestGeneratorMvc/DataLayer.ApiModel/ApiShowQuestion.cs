@@ -13,6 +13,7 @@ namespace DataLayer.ApiModel
         public int Complexity { get; set; }
         public string ValidFrom { get; set; }
         public string ValidTo { get; set; }
+        public string Tags { get; set; }
         public bool IsValid { get; set; }
     }
 }

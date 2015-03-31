@@ -9,5 +9,8 @@ namespace DataLayer.Interfaces
 {
     public interface ITagRepository : IRepository<Tag>
     {
+        List<Tag> GetTagsForText(List<string> tagsInText);
+
+        void CreateTagsWhichNotExists(List<string> tagsInText);
     }
 }

@@ -7,6 +7,7 @@ using AutoMapper;
 using BusinessLayer.Interfaces;
 using DataLayer.ApiModel;
 using DataLayer.Interfaces;
+using DataLayer.Model;
 
 namespace BusinessLayer.Services
 {
@@ -23,14 +24,17 @@ namespace BusinessLayer.Services
             m_TestRepository = m_UnitOfWork.GetRepository<ITestRepository>();
         }
 
-        public List<ApiShowQuestion> GetQuestions()
+        public List<ApiShowQuestionForTestCreate> GetQuestions()
         {
-            return Mapper.Map<List<ApiShowQuestion>>(m_QuestionRepository.GetAll());
+            return Mapper.Map<List<ApiShowQuestionForTestCreate>>(m_QuestionRepository.GetAllWithTag());
         }
 
-        public void CreateTest(ApiCreateTest test)
+        public string CreateTest(ApiCreateTest test)
         {
-            throw new NotImplementedException();
+            Test newTest = Mapper.Map<Test>(test);
+            m_TestRepository.Create(newTest);
+            m_UnitOfWork.SaveChanges();
+            return "success";
         }
     }
 }

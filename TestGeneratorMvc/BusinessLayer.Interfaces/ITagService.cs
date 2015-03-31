@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataLayer.ApiModel;
+using DataLayer.Model;
 
 namespace BusinessLayer.Interfaces
 {
-    public interface ITestCreateService
+    public interface ITagService
     {
-        List<ApiShowQuestionForTestCreate> GetQuestions();
+        List<Tag> GetTagsFromString(string tags);
 
-        string CreateTest(ApiCreateTest test);
+        string GetTagsToString(List<Tag> tags);
     }
 }

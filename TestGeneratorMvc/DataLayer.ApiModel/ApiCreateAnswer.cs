@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataLayer.ApiModel
 {
-    public class ApiCreateQuestion
+    public class ApiCreateAnswer
     {
+        public bool IsCorrect { get; set; }
         public string Text { get; set; }
-        public int Complexity { get; set; }
-        public string Tags { get; set; }
-        public List<ApiCreateAnswer> Answers { get; set; }
     }
 }

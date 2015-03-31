@@ -15,17 +15,23 @@ namespace BusinessLayer.Services
     {
         private IUnitOfWork m_UnitOfWork;
         private IQuestionRepository m_QuestionRepository;
+        private ITagRepository m_TagRepository;
 
         public QuestionCreateService(IUnitOfWork unitOfWork)
         {
             m_UnitOfWork = unitOfWork;
             m_QuestionRepository = m_UnitOfWork.GetRepository<IQuestionRepository>();
+            m_TagRepository = m_UnitOfWork.GetRepository<ITagRepository>();
         }
 
         public string AddQuestion(ApiCreateQuestion question)
         {
-            var s = new Question { Text = question.Text };
-            m_QuestionRepository.Create(s);
+            Question newQuestion = Mapper.Map<Question>(question);
+            List<string> tagsInText = question.Tags.Split(' ').ToList();
+            //TO-DO: Need more flexible way to save tags (in mapping for example)
+            m_TagRepository.CreateTagsWhichNotExists(tagsInText);
+            newQuestion.Tags = m_TagRepository.GetTagsForText(tagsInText);
+            m_QuestionRepository.Create(newQuestion);
             m_UnitOfWork.SaveChanges();
             return "success";
         }

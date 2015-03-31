@@ -55,6 +55,7 @@
     <Compile Include="QuestionCreateService.cs" />
     <Compile Include="QuestionImport\QuestionImportService.cs" />
     <Compile Include="QuestionViewService.cs" />
+    <Compile Include="TagService.cs" />
     <Compile Include="TestCreateService.cs" />
   </ItemGroup>
   <ItemGroup>

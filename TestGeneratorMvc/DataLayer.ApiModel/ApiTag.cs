@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataLayer.ApiModel
 {
-    public class ApiCreateQuestion
+    public class ApiTag : ApiBaseEntity
     {
         public string Text { get; set; }
-        public int Complexity { get; set; }
-        public string Tags { get; set; }
-        public List<ApiCreateAnswer> Answers { get; set; }
     }
 }
