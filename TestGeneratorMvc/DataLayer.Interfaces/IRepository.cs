@@ -18,6 +18,8 @@ namespace DataLayer.Interfaces
 
         List<T> GetAll();
 
+        void Attach(T entity);
+
         int Count { get; }
     }
 }

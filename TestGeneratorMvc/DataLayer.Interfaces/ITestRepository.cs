@@ -9,5 +9,6 @@ namespace DataLayer.Interfaces
 {
     public interface ITestRepository : IRepository<Test>
     {
+        List<Test> GetAllWithUsers();
     }
 }

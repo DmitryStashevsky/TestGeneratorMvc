@@ -32,6 +32,11 @@ namespace BusinessLayer.Services
         public string CreateTest(ApiCreateTest test)
         {
             Test newTest = Mapper.Map<Test>(test);
+            //atach questions to context
+            foreach(var question in newTest.Questions)
+            {
+                m_QuestionRepository.Attach(question);
+            }
             m_TestRepository.Create(newTest);
             m_UnitOfWork.SaveChanges();
             return "success";

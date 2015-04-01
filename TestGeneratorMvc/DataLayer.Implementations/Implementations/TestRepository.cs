@@ -11,6 +11,11 @@ namespace DataLayer.Implementations.Implementations
 {
     public class TestRepository : Repository<Test>, ITestRepository
     {
+        public List<Test> GetAllWithUsers()
+        {
+            return m_Context.Set<Test>().AsNoTracking().Include(e => e.Users).ToList();
+        }
+
         public TestRepository(DbContext context)
             : base(context)
         {

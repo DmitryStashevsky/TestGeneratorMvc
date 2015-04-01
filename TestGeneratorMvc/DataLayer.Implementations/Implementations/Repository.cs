@@ -46,6 +46,11 @@ namespace DataLayer.Implementations.Implementations
             return m_Context.Set<T>().ToList();
         }
 
+        public void Attach(T entity)
+        {
+            m_Context.Set<T>().Attach(entity);
+        }
+
         public int Count
         {
             get

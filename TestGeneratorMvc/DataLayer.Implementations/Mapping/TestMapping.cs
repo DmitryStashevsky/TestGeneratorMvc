@@ -16,7 +16,10 @@ namespace DataLayer.Implementations.Mapping
 
             HasKey(e => e.Id);
 
-            Property(e => e.Description).IsRequired();
+            Property(e => e.Name).IsRequired();
+            Property(e => e.CountOfQuestions).IsRequired();
+            Property(e => e.CountOfAnswers).IsRequired();
+            Property(e => e.CountOfRightAnswers).IsRequired();
 
             HasMany(e => e.Questions).WithMany(e => e.Tests).Map(e =>
                 {

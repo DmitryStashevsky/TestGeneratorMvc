@@ -19,6 +19,15 @@ namespace BusinessLayer.Mapping
             Mapper.CreateMap<XmlQuestion, Question>();
             Mapper.CreateMap<XmlTest, Test>();
 
+            Mapper.CreateMap<Answer, ApiShowAnswer>();
+            Mapper.CreateMap<Answer, ApiShowAnswerWithValue>();
+
+            Mapper.CreateMap<Guid, Question>().ForMember(d => d.Id, s => s.MapFrom(src => new Question { Id = src }));
+            Mapper.CreateMap<Question, Guid>().ConvertUsing(source => source.Id);
+
+            Mapper.CreateMap<Test, ApiShowTest>().ForMember(d => d.CountOfPassedUsers, s => s.MapFrom(src => src.Users.Count));
+
+            Mapper.CreateMap<ApiCreateTest, Test>();
             Mapper.CreateMap<ApiCreateQuestion, Question>().ForMember(d => d.Tags, s => s.Ignore());
             Mapper.CreateMap<ApiCreateAnswer, Answer>();
             Mapper.CreateMap<Question, ApiShowQuestion>()

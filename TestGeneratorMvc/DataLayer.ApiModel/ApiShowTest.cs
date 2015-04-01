@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataLayer.ApiModel
 {
-    public class ApiCreateTest
+    public class ApiShowTest : ApiBaseEntity
     {
         public string Name { get; set; }
         public int CountOfQuestions { get; set; }
         public int CountOfAnswers { get; set; }
         public int CountOfRightAnswers { get; set; }
-
-        public List<Guid> Questions { get; set; }
+        public int CountOfPassedUsers { get; set; }
     }
 }

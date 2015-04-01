@@ -39,11 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAnswerService.cs" />
     <Compile Include="IQuestionCreateService.cs" />
     <Compile Include="IQuestionImportService.cs" />
     <Compile Include="IQuestionViewService.cs" />
     <Compile Include="ITagService.cs" />
     <Compile Include="ITestCreateService.cs" />
+    <Compile Include="ITestViewService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

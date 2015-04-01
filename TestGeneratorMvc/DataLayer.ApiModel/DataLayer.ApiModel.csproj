@@ -42,9 +42,12 @@
     <Compile Include="ApiCreateAnswer.cs" />
     <Compile Include="ApiBaseEntity.cs" />
     <Compile Include="ApiCreateQuestion.cs" />
+    <Compile Include="ApiShowAnswer.cs" />
+    <Compile Include="ApiShowAnswerWithValue.cs" />
     <Compile Include="ApiShowQuestion.cs" />
     <Compile Include="ApiCreateTest.cs" />
     <Compile Include="ApiShowQuestionForTestCreate.cs" />
+    <Compile Include="ApiShowTest.cs" />
     <Compile Include="ApiTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -13,7 +13,7 @@ namespace DataLayer.Implementations.ApplicationDbContext
         public TestGeneratorDbContext(string connectionString = "DefaultConnection")
             : base(connectionString)
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<TestGeneratorDbContext>());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<TestGeneratorDbContext>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

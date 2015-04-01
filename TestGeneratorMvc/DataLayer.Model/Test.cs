@@ -9,7 +9,10 @@ namespace DataLayer.Model
 {
     public class Test : BaseEntity
     {
-        public string Description { get; set; }
+        public string Name { get; set; }
+        public int CountOfQuestions { get; set; }
+        public int CountOfAnswers { get; set; }
+        public int CountOfRightAnswers { get; set; }
 
         public Test()
             : base()
