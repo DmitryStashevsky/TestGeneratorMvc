@@ -78,6 +78,10 @@
       <Project>{9f0013d2-fe80-4f9e-bc8e-d615dc2b0dcc}</Project>
       <Name>DataLayer.XmlModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DocumentGenerator\TestExportHelper.csproj">
+      <Project>{d2f16279-3730-4778-a4af-4a4ef627666b}</Project>
+      <Name>TestExportHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

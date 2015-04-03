@@ -42,13 +42,18 @@
     <Compile Include="ApiCreateAnswer.cs" />
     <Compile Include="ApiBaseEntity.cs" />
     <Compile Include="ApiCreateQuestion.cs" />
+    <Compile Include="ApiCreateTestExport.cs" />
     <Compile Include="ApiShowAnswer.cs" />
     <Compile Include="ApiShowAnswerWithValue.cs" />
     <Compile Include="ApiShowQuestion.cs" />
     <Compile Include="ApiCreateTest.cs" />
     <Compile Include="ApiShowQuestionForTestCreate.cs" />
+    <Compile Include="ApiShowQuestionForTestView.cs" />
     <Compile Include="ApiShowTest.cs" />
+    <Compile Include="ApiShowTestExport.cs" />
+    <Compile Include="ApiShowTestWithTestExport.cs" />
     <Compile Include="ApiTag.cs" />
+    <Compile Include="ApiShowTestExportAfterCreate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

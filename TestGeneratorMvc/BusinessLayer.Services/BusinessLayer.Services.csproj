@@ -58,6 +58,8 @@
     <Compile Include="QuestionViewService.cs" />
     <Compile Include="TagService.cs" />
     <Compile Include="TestCreateService.cs" />
+    <Compile Include="TestExportCreateService.cs" />
+    <Compile Include="TestExportViewService.cs" />
     <Compile Include="TestViewService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +70,10 @@
     <ProjectReference Include="..\DataLayer.ApiModel\DataLayer.ApiModel.csproj">
       <Project>{9a5a603a-a702-45c1-9ca9-0acc213658d5}</Project>
       <Name>DataLayer.ApiModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer.ExportModel\DataLayer.ExportModel.csproj">
+      <Project>{55a52b19-9887-4cec-b9eb-b9ef526bb69e}</Project>
+      <Name>DataLayer.ExportModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataLayer.Implementations\DataLayer.Implementations.csproj">
       <Project>{22c19c1c-4865-4af8-8572-37292a41270f}</Project>
@@ -84,6 +90,10 @@
     <ProjectReference Include="..\DataLayer.XmlModel\DataLayer.XmlModel.csproj">
       <Project>{9f0013d2-fe80-4f9e-bc8e-d615dc2b0dcc}</Project>
       <Name>DataLayer.XmlModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DocumentGenerator\TestExportHelper.csproj">
+      <Project>{d2f16279-3730-4778-a4af-4a4ef627666b}</Project>
+      <Name>TestExportHelper</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

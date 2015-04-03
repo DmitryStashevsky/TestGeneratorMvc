@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using BusinessLayer.Interfaces;
 using DataLayer.ApiModel;
+using DataLayer.ExportModel;
 using DataLayer.Model;
 using DataLayer.XmlModel;
 
@@ -18,6 +19,15 @@ namespace BusinessLayer.Mapping
             Mapper.CreateMap<XmlAnswer, Answer>();
             Mapper.CreateMap<XmlQuestion, Question>();
             Mapper.CreateMap<XmlTest, Test>();
+
+            Mapper.CreateMap<Answer, ExportAnswer>();
+            Mapper.CreateMap<Question, ExportQuestion>();
+            Mapper.CreateMap<Test, ExportTest>();
+            Mapper.CreateMap<ExportTest, ExportTestForOutput>();
+
+            Mapper.CreateMap<TestExport, ApiShowTestExportAfterCreate>();
+            Mapper.CreateMap<TestExport, ApiShowTestExport>();
+            Mapper.CreateMap<Test, ApiShowTestWithTestExport>();
 
             Mapper.CreateMap<Answer, ApiShowAnswer>();
             Mapper.CreateMap<Answer, ApiShowAnswerWithValue>();
@@ -36,6 +46,7 @@ namespace BusinessLayer.Mapping
                 .ForMember(d => d.Tags, s => s.MapFrom(src => tagService.GetTagsToString(src.Tags)));
              Mapper.CreateMap<Question, ApiShowQuestionForTestCreate>()
                  .ForMember(d => d.Tags, s => s.MapFrom(src => tagService.GetTagsToString(src.Tags)));
+             Mapper.CreateMap<Question, ApiShowQuestionForTestView>();
         }
     }
 }

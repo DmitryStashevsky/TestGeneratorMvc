@@ -10,5 +10,9 @@ namespace DataLayer.Interfaces
     public interface ITestRepository : IRepository<Test>
     {
         List<Test> GetAllWithUsers();
+
+        List<Test> GetAllWithTestExport();
+
+        Test GetByIdWithQuestionsAndAnswers(Guid id);
     }
 }

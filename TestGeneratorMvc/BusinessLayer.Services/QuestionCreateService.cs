@@ -33,7 +33,7 @@ namespace BusinessLayer.Services
             newQuestion.Tags = m_TagRepository.GetTagsForText(tagsInText);
             m_QuestionRepository.Create(newQuestion);
             m_UnitOfWork.SaveChanges();
-            return "success";
+            return "Successfully added new question";
         }
     }
 }

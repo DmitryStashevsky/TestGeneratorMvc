@@ -11,6 +11,8 @@ namespace BusinessLayer.Interfaces
     {
         List<ApiShowQuestion> GetQuestions();
 
+        List<ApiShowQuestionForTestView> GetQuestionsForTest(Guid testId);
+
         int GetQuestionsCount();
     }
 }

@@ -26,6 +26,11 @@ namespace BusinessLayer.Services
             return Mapper.Map<List<ApiShowQuestion>>(m_QuestionRepository.GetAllWithTag());
         }
 
+        public List<ApiShowQuestionForTestView> GetQuestionsForTest(Guid testId)
+        {
+            return Mapper.Map<List<ApiShowQuestionForTestView>>(m_QuestionRepository.GetQuestionsForTest(testId));
+        }
+
         public int GetQuestionsCount()
         {
             return m_QuestionRepository.Count;

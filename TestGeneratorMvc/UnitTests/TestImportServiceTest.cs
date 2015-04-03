@@ -10,10 +10,7 @@ namespace UnitTests
         [TestMethod]
         public void TestImport()
         {
-            using (var stream = File.OpenRead("D://CSharp.xml"))
-            {
-                //TestImportService.Instance.Import(stream);
-            }
+            
         }
     }
 }

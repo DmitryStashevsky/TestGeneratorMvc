@@ -19,10 +19,13 @@ namespace DataLayer.Model
         {
             Questions = new List<Question>();
             Users = new List<User>();
+            TestExports = new List<TestExport>();
         }
 
         public List<Question> Questions { get; set; }
 
         public List<User> Users { get; set; }
+
+        public List<TestExport> TestExports { get; set; }
     }
 }

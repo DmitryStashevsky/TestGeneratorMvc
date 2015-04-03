@@ -64,6 +64,10 @@
       <Project>{9a5a603a-a702-45c1-9ca9-0acc213658d5}</Project>
       <Name>DataLayer.ApiModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataLayer.ExportModel\DataLayer.ExportModel.csproj">
+      <Project>{55a52b19-9887-4cec-b9eb-b9ef526bb69e}</Project>
+      <Name>DataLayer.ExportModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataLayer.Model\DataLayer.Model.csproj">
       <Project>{6fd2f7a2-03d9-47c5-ac24-69482d1d290a}</Project>
       <Name>DataLayer.Model</Name>

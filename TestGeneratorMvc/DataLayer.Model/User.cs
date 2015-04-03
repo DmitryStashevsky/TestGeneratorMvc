@@ -14,10 +14,12 @@ namespace DataLayer.Model
             : base()
         {
             Tests = new List<Test>();
-            UserAnswers = new List<UserAnswer>(); 
+            UserAnswers = new List<UserAnswer>();
+            TestExports = new List<TestExport>();
         }
 
         public List<Test> Tests { get; set; }
+        public List<TestExport> TestExports { get; set; }
         public List<UserAnswer> UserAnswers { get; set; }
     }
 }

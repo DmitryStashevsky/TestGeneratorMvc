@@ -39,7 +39,7 @@ namespace BusinessLayer.Services
             }
             m_TestRepository.Create(newTest);
             m_UnitOfWork.SaveChanges();
-            return "success";
+            return "Successfully added new test";
         }
     }
 }
