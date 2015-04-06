@@ -23,9 +23,14 @@ namespace BusinessLayer.Services
             m_TestExportRepository = m_UnitOfWork.GetRepository<ITestExportRepository>();
         }
 
-        public List<ApiShowTestWithTestExport> GetTestExports()
+        public List<ApiShowTestWithTestExport> GetTestExportsForTests()
         {
             return Mapper.Map<List<ApiShowTestWithTestExport>>(m_TestRepository.GetAllWithTestExport());
+        }
+
+        public List<ApiShowTestExportWithTestInfo> GetTestExportsWithTestInfo()
+        {
+            return Mapper.Map<List<ApiShowTestExportWithTestInfo>>(m_TestExportRepository.GetAllWithTest());
         }
     }
 }

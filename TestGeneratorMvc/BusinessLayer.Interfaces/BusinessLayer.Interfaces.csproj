@@ -46,6 +46,7 @@
     <Compile Include="ITagService.cs" />
     <Compile Include="ITestCreateService.cs" />
     <Compile Include="ITestExportCreateService.cs" />
+    <Compile Include="ITestExportEditService.cs" />
     <Compile Include="ITestExportViewService.cs" />
     <Compile Include="ITestViewService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

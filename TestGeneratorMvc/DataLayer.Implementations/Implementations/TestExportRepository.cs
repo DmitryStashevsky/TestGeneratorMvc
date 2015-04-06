@@ -15,5 +15,10 @@ namespace DataLayer.Implementations.Implementations
             : base(context)
         {
         }
+
+        public List<TestExport> GetAllWithTest()
+        {
+            return m_Context.Set<TestExport>().AsNoTracking().Include(e => e.Test).ToList();
+        }
     }
 }

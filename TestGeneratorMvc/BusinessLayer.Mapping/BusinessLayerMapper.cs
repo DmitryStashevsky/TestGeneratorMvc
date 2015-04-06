@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,8 +26,10 @@ namespace BusinessLayer.Mapping
             Mapper.CreateMap<Test, ExportTest>();
             Mapper.CreateMap<ExportTest, ExportTestForOutput>();
 
-            Mapper.CreateMap<TestExport, ApiShowTestExportAfterCreate>();
+            Mapper.CreateMap<TestExport, ApiShowTestExportAfterCreate>(); 
             Mapper.CreateMap<TestExport, ApiShowTestExport>();
+            Mapper.CreateMap<TestExport, ApiShowTestExportWithTestInfo>()
+                .ForMember(d => d.Created, s => s.MapFrom(src => src.Created.ToString("G")));
             Mapper.CreateMap<Test, ApiShowTestWithTestExport>();
 
             Mapper.CreateMap<Answer, ApiShowAnswer>();
@@ -41,8 +44,8 @@ namespace BusinessLayer.Mapping
             Mapper.CreateMap<ApiCreateQuestion, Question>().ForMember(d => d.Tags, s => s.Ignore());
             Mapper.CreateMap<ApiCreateAnswer, Answer>();
             Mapper.CreateMap<Question, ApiShowQuestion>()
-                .ForMember(d => d.ValidFrom, s => s.MapFrom(src => src.ValidFrom.ToShortDateString()))
-                .ForMember(d => d.ValidTo, s => s.MapFrom(src => (src.ValidTo.HasValue) ? src.ValidTo.Value.ToShortDateString() : ""))
+                .ForMember(d => d.ValidFrom, s => s.MapFrom(src => src.ValidFrom.ToString("G")))
+                .ForMember(d => d.ValidTo, s => s.MapFrom(src => (src.ValidTo.HasValue) ? src.ValidTo.Value.ToString("G") : ""))
                 .ForMember(d => d.Tags, s => s.MapFrom(src => tagService.GetTagsToString(src.Tags)));
              Mapper.CreateMap<Question, ApiShowQuestionForTestCreate>()
                  .ForMember(d => d.Tags, s => s.MapFrom(src => tagService.GetTagsToString(src.Tags)));

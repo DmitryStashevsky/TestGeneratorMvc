@@ -59,6 +59,7 @@
     <Compile Include="TagService.cs" />
     <Compile Include="TestCreateService.cs" />
     <Compile Include="TestExportCreateService.cs" />
+    <Compile Include="TestExportEditService.cs" />
     <Compile Include="TestExportViewService.cs" />
     <Compile Include="TestViewService.cs" />
   </ItemGroup>

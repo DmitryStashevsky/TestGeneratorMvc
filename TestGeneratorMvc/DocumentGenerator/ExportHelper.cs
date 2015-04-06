@@ -191,5 +191,10 @@ namespace TestExportHelper
             }
             Directory.Delete(PathToTemporaryFolder);
         }
+
+        public static void DeleteTestExport(string pathToFile)
+        {
+            File.Delete(pathToFile);
+        }
     }
 }

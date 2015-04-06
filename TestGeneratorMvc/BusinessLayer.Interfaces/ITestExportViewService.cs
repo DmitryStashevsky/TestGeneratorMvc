@@ -9,6 +9,8 @@ namespace BusinessLayer.Interfaces
 {
     public interface ITestExportViewService
     {
-        List<ApiShowTestWithTestExport> GetTestExports();
+        List<ApiShowTestWithTestExport> GetTestExportsForTests();
+
+        List<ApiShowTestExportWithTestInfo> GetTestExportsWithTestInfo();
     }
 }

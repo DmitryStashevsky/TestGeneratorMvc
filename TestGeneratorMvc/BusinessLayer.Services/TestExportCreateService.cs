@@ -37,7 +37,6 @@ namespace BusinessLayer.Services
                 testExport.Path = helper.PathToZipArchive;
                 testExport.VirtualPath = string.Format("/Export/{0}", helper.ZipArchiveName);
                 testExport.TestId = createTextExport.TestId;
-                //m_TestRepository.Attach(new Test { Id = testExport.TestId });
                 var testExportFromDb = m_TestExportRepository.Create(testExport);
                 m_UnitOfWork.SaveChanges();
                 return Mapper.Map<ApiShowTestExportAfterCreate>(testExportFromDb);

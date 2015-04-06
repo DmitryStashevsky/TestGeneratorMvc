@@ -9,5 +9,6 @@ namespace DataLayer.Interfaces
 {
     public interface ITestExportRepository : IRepository<TestExport>
     {
+        List<TestExport> GetAllWithTest();
     }
 }
