@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExportHelper", "Documen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer.ExportModel", "DataLayer.ExportModel\DataLayer.ExportModel.csproj", "{55A52B19-9887-4CEC-B9EB-B9EF526BB69E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGeneratorMvc", "TestGeneratorMvc\TestGeneratorMvc.csproj", "{D6E907C9-171F-41A6-8E90-7CFFB15FE467}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGeneratorMvc", "TestGeneratorMvc\TestGeneratorMvc.csproj", "{052B1B86-F253-4F40-8EEC-1A51A5231838}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,10 +81,10 @@ Global
 		{55A52B19-9887-4CEC-B9EB-B9EF526BB69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55A52B19-9887-4CEC-B9EB-B9EF526BB69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55A52B19-9887-4CEC-B9EB-B9EF526BB69E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6E907C9-171F-41A6-8E90-7CFFB15FE467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6E907C9-171F-41A6-8E90-7CFFB15FE467}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6E907C9-171F-41A6-8E90-7CFFB15FE467}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6E907C9-171F-41A6-8E90-7CFFB15FE467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052B1B86-F253-4F40-8EEC-1A51A5231838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052B1B86-F253-4F40-8EEC-1A51A5231838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052B1B86-F253-4F40-8EEC-1A51A5231838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052B1B86-F253-4F40-8EEC-1A51A5231838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

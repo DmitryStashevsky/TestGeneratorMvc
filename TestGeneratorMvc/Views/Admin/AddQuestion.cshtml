@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "AddQuestion";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/angularApp")
+}
+<div ng-controller="AddQuestionController">
+    <h1 class="page-header">AddQuestion</h1>
+    <h2 class="sub-header">Question</h2>
+    <form>
+        <div class="form-group">
+            <label for="questionText">Text</label>
+            <textarea class="form-control" id="questionText" placeholder="Enter question text" ng-model="question.Text" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="questionTags">Tags</label>
+            <input type="text" class="form-control" id="questionTags" placeholder="Tags" ng-model="question.Tags" required />
+        </div>
+        <h2 class="sub-header">Answers <span class="glyphicon glyphicon-plus" ng-click="addAnswer()"></span></h2>
+        <div ng-repeat="answer in question.answers">
+             <textarea class="form-control" placeholder="Enter answer text" ng-model="answer.Text" required></textarea>
+             <input type="checkbox" ng-model="answer.isCorrect"/>
+             <input type="button" value="Remove" class="btn btn-default" ng-click="deleteAnswer($index)" />
+        </div>
+    </form>
+</div>
+
