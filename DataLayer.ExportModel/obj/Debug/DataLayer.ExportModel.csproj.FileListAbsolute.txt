@@ -1,0 +1,5 @@
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ExportModel\bin\Debug\DataLayer.ExportModel.dll
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ExportModel\bin\Debug\DataLayer.ExportModel.pdb
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.dll
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.pdb

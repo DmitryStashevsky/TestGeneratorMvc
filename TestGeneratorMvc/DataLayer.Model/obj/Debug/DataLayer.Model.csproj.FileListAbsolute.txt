@@ -1,8 +1,0 @@
-D:\Тренинг\TestGenerator\TestGenerator\Model\bin\Debug\DataLayer.Model.dll
-D:\Тренинг\TestGenerator\TestGenerator\Model\bin\Debug\DataLayer.Model.pdb
-D:\Тренинг\TestGenerator\TestGenerator\Model\obj\Debug\DataLayer.Model.dll
-D:\Тренинг\TestGenerator\TestGenerator\Model\obj\Debug\DataLayer.Model.pdb
-D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Model\bin\Debug\DataLayer.Model.dll
-D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Model\bin\Debug\DataLayer.Model.pdb
-D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Model\obj\Debug\DataLayer.Model.dll
-D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Model\obj\Debug\DataLayer.Model.pdb

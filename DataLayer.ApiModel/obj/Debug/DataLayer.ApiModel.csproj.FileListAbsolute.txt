@@ -1,0 +1,5 @@
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ApiModel\bin\Debug\DataLayer.ApiModel.dll
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ApiModel\bin\Debug\DataLayer.ApiModel.pdb
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.dll
+D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.pdb
