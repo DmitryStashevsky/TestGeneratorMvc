@@ -9,8 +9,8 @@ namespace BusinessLayer.Interfaces
 {
     public interface ITestCreateService
     {
-        List<ApiShowQuestionForTestCreate> GetQuestions();
+        List<ApiShowQuestionForTestCreate> GetQuestionsForTestCreate();
 
-        string CreateTest(ApiCreateTest test);
+        string AddTest(ApiCreateTest test);
     }
 }

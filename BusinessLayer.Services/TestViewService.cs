@@ -31,7 +31,7 @@ namespace BusinessLayer.Services
             return Mapper.Map<List<ApiShowTest>>(m_TestRepository.GetAllWithUsers());
         }
 
-        public int GetTestCount()
+        public int GetTestsCount()
         {
             return m_TestRepository.Count;
         }

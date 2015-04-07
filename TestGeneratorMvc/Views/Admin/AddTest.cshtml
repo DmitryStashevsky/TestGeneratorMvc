@@ -3,4 +3,62 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>AddTest</h2>
+<div ng-controller="AddTestController">
+    <h1 class="page-header">Add test</h1>
+    <div class="row col-sm-12">
+        <form name="testForm" class="form-inline">
+            <div class="form-group">
+                <label for="testName">Test name</label>
+                <input type="text" class="form-control" id="testName" placeholder="Test name" ng-model="test.Name" required />
+            </div>
+            <div class="form-group">
+                <label for="questionCount">Count of questions</label>
+                <input type="number" class="form-control" id="questionCount" placeholder="Count for questions" ng-model="test.CountOfQuestions" required />
+            </div>
+            <div class="form-group">
+                <label for="answerCount">Count of answers</label>
+                <input type="number" class="form-control" id="answerCount" placeholder="Count for answers" ng-model="test.CountOfAnswers" required />
+            </div>
+            <div class="form-group">
+                <label for="rightAnswerCount">Count of right answers</label>
+                <input type="number" class="form-control" id="rightAnswer" placeholder="Count for right answers" ng-model="test.CountOfRightAnswers" required />
+            </div>
+            <div class="form-group">
+                <input type="button" value="Save test" class="btn btn-success pull-right" ng-click="addTest(test)" ng-show="testForm.$valid" />
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="pull-left col-md-6 same-height" ui-on-Drop="onDrop($event,$data,questions)">
+            <h2 class="sub-header">Questions</h2>
+            <div ng-repeat="question in questions track by $index"  ui-draggable="true"  draggable drag="question" on-drop-success="dropSuccessHandler($event,$index,questions)">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span>Tags: {{question.Tags}}</span>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{question.Text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pull-right col-md-6 same-height" ui-on-Drop="onDrop($event,$data,test.Questions)">
+            <h2 class="sub-header">Questions for test</h2>
+            <div ng-repeat="question in test.Questions track by $index" ui-draggable="true" draggable drag="question" on-drop-success="dropSuccessHandler($event,$index,test.Questions)">
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <span>Tags: {{question.Tags}}</span>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{question.Text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/adminApp")
+}

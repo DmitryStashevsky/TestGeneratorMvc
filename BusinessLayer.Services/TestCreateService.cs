@@ -24,12 +24,12 @@ namespace BusinessLayer.Services
             m_TestRepository = m_UnitOfWork.GetRepository<ITestRepository>();
         }
 
-        public List<ApiShowQuestionForTestCreate> GetQuestions()
+        public List<ApiShowQuestionForTestCreate> GetQuestionsForTestCreate()
         {
             return Mapper.Map<List<ApiShowQuestionForTestCreate>>(m_QuestionRepository.GetAllWithTag());
         }
 
-        public string CreateTest(ApiCreateTest test)
+        public string AddTest(ApiCreateTest test)
         {
             Test newTest = Mapper.Map<Test>(test);
             //atach questions to context

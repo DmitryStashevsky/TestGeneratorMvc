@@ -35,5 +35,43 @@ adminApplication.factory('webApiFactory', function ($http) {
         })
     };
 
+    webApiFactory.addTest = function (test, callback) {
+        return $http.post("/api/Test/AddTest", test)
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getTests = function (callback) {
+        return $http.get("/api/Test/GetTests")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getTestsCount = function (callback) {
+        return $http.get("/api/Test/GetTestsCount")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getQuestionsForTest = function (GetQuestionsForTest, callback) {
+        return $http({
+            url: "/api/Test/ПetQuestionsForTest",
+            method: "GET",
+            params: { testId: testId }
+        }).success(function (data) {
+            callback(data);
+        })
+    };
+
+    webApiFactory.getQuestionsForTestCreate = function (callback) {
+        return $http.get("/api/Test/GetQuestionsForTestCreate")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
     return webApiFactory;
 });

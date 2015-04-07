@@ -198,3 +198,4 @@ C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\TestGeneratorMvc\bin\zh-Hant\S
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\TestGeneratorMvc\obj\Debug\TestGeneratorMvc.csprojResolveAssemblyReference.cache
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\TestGeneratorMvc\obj\Debug\TestGeneratorMvc.dll
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\TestGeneratorMvc\obj\Debug\TestGeneratorMvc.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\TestGeneratorMvc\bin\AutoMapper.Net4.dll

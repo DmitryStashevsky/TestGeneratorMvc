@@ -13,6 +13,6 @@ namespace BusinessLayer.Interfaces
 
         List<ApiShowTest> GetTestsWithUsers();
 
-        int GetTestCount();
+        int GetTestsCount();
     }
 }
