@@ -7,3 +7,12 @@ D:\Тренинг\TestGeneratorMvc\testgeneratormvc\BusinessLayer.Interfaces\bin
 D:\Тренинг\TestGeneratorMvc\testgeneratormvc\BusinessLayer.Interfaces\obj\Debug\BusinessLayer.Interfaces.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\testgeneratormvc\BusinessLayer.Interfaces\obj\Debug\BusinessLayer.Interfaces.dll
 D:\Тренинг\TestGeneratorMvc\testgeneratormvc\BusinessLayer.Interfaces\obj\Debug\BusinessLayer.Interfaces.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Debug\BusinessLayer.Interfaces.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Debug\BusinessLayer.Interfaces.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Debug\DataLayer.ApiModel.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Debug\DataLayer.Model.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Debug\DataLayer.ApiModel.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Debug\DataLayer.Model.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\obj\Debug\BusinessLayer.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\obj\Debug\BusinessLayer.Interfaces.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Interfaces\obj\Debug\BusinessLayer.Interfaces.pdb

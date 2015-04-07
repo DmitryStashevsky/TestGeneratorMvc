@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_references.js" />
 
-adminApplication.controller('AddQuestionController', ['$scope', 'webApiFactory', function ($scope, webApiFactory, Notification) {
+adminApplication.controller('AddQuestionController', ['$scope', 'webApiFactory', 'Notification', function ($scope, webApiFactory, Notification) {
     $scope.addQuestion = function (question) {
         webApiFactory.addQuestion(question, function (data) {
             Notification.success(data);

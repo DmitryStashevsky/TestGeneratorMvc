@@ -10,3 +10,15 @@ D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\bi
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.dll
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.csprojResolveAssemblyReference.cache
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\obj\Debug\DataLayer.Implementations.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Implementations.dll.config
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Implementations.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Implementations.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Interfaces.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Model.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\EntityFramework.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Interfaces.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Model.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\EntityFramework.xml

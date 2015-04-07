@@ -1,11 +1,11 @@
 angular.module('ui-notification',[]);
 
-angular.module('ui-notification').value('uiNotificationTemplates','angular-ui-notification.html');
+angular.module('ui-notification').value('uiNotificationTemplates','/Content/angular-ui-notification.html');
 
 angular.module('ui-notification').factory('Notification', function(
 	$timeout, uiNotificationTemplates, $http, $compile, $templateCache, $rootScope, $injector, $sce) {
 
-	var startTop = 10;
+	var startTop = 70;
 	var startRight = 10;
 	var verticalSpacing = 10;
 	var horizontalSpacing = 10;

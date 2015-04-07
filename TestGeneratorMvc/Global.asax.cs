@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLayer.Interfaces;
+using BusinessLayer.Mapping;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,6 +24,8 @@ namespace TestGeneratorMvc
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            BusinessLayerMapper.Map(DependencyResolver.Current.GetService<ITagService>());
         }
     }
 }

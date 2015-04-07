@@ -3,3 +3,8 @@ D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.XmlModel\bin\Debug
 D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.XmlModel\obj\Debug\DataLayer.XmlModel.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.XmlModel\obj\Debug\DataLayer.XmlModel.dll
 D:\Тренинг\TestGeneratorMvc\testgeneratormvc\DataLayer.XmlModel\obj\Debug\DataLayer.XmlModel.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.XmlModel\bin\Debug\DataLayer.XmlModel.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.XmlModel\bin\Debug\DataLayer.XmlModel.pdb
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.XmlModel\obj\Debug\DataLayer.XmlModel.csprojResolveAssemblyReference.cache
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.XmlModel\obj\Debug\DataLayer.XmlModel.dll
+C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.XmlModel\obj\Debug\DataLayer.XmlModel.pdb

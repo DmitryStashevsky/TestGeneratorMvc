@@ -25,7 +25,7 @@ namespace TestGeneratorMvc
                         "~/Scripts/angular/angular-ui-notification.js",
                         "~/Scripts/angular/draganddrop.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/angularApp").Include("~/Scripts/angular/angularApp.js",
+            bundles.Add(new ScriptBundle("~/Scripts/adminApp").Include("~/Scripts/angular/adminApp.js",
                         "~/Scripts/angular/QuestionController.js",
                         "~/Scripts/angular/AddQuestionController.js"));
 

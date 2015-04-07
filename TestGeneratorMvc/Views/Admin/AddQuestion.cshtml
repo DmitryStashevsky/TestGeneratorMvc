@@ -2,14 +2,11 @@
     ViewBag.Title = "AddQuestion";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-@section Scripts
-{
-    @Scripts.Render("~/Scripts/angularApp")
-}
+
 <div ng-controller="AddQuestionController">
     <h1 class="page-header">AddQuestion</h1>
     <h2 class="sub-header">Question</h2>
-    <form>
+    <form name="questionForm">
         <div class="form-group">
             <label for="questionText">Text</label>
             <textarea class="form-control" id="questionText" placeholder="Enter question text" ng-model="question.Text" required></textarea>
@@ -20,10 +17,23 @@
         </div>
         <h2 class="sub-header">Answers <span class="glyphicon glyphicon-plus" ng-click="addAnswer()"></span></h2>
         <div ng-repeat="answer in question.answers">
-             <textarea class="form-control" placeholder="Enter answer text" ng-model="answer.Text" required></textarea>
-             <input type="checkbox" ng-model="answer.isCorrect"/>
-             <input type="button" value="Remove" class="btn btn-default" ng-click="deleteAnswer($index)" />
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <textarea class="form-control" rows="2" placeholder="Enter answer text" ng-model="answer.text" required></textarea>
+                </div>
+                <div class="panel-footer">
+                     <span>Is correct: </span><input type="checkbox" ng-model="answer.isCorrect"/>
+                     <input type="button" value="Remove" class="btn btn-danger pull-right" ng-click="deleteAnswer($index)" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="button" value="Save question" class="btn btn-success pull-right" ng-click="addQuestion(question)" ng-show="questionForm.$valid" />
         </div>
     </form>
 </div>
 
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/adminApp")
+}

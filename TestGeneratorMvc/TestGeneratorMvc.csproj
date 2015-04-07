@@ -268,7 +268,7 @@
     <Content Include="Scripts\angular\angular-ui-notification.js" />
     <Content Include="Scripts\angular\angular.js" />
     <Content Include="Scripts\angular\angular.min.js" />
-    <Content Include="Scripts\angular\angularApp.js" />
+    <Content Include="Scripts\angular\adminApp.js" />
     <Content Include="Scripts\angular\draganddrop.js" />
     <Content Include="Scripts\angular\QuestionController.js" />
     <Content Include="Scripts\bootstrap.js" />
