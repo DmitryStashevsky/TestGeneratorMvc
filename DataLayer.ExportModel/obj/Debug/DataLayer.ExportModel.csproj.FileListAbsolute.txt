@@ -8,3 +8,8 @@ C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.ExportModel\bin\Debu
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.csprojResolveAssemblyReference.cache
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.dll
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\bin\Debug\DataLayer.ExportModel.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\bin\Debug\DataLayer.ExportModel.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\obj\Debug\DataLayer.ExportModel.pdb

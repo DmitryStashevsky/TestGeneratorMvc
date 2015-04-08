@@ -10,6 +10,5 @@ C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.ApiModel\obj\Debug\D
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.pdb
 D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\bin\Debug\DataLayer.ApiModel.dll
 D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\bin\Debug\DataLayer.ApiModel.pdb
-D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.dll
 D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.pdb

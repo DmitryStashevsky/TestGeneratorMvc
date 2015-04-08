@@ -85,3 +85,4 @@ C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Mapping\bin\Debu
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Mapping\obj\Debug\BusinessLayer.Mapping.csprojResolveAssemblyReference.cache
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Mapping\obj\Debug\BusinessLayer.Mapping.dll
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Mapping\obj\Debug\BusinessLayer.Mapping.pdb
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Mapping\bin\Debug\BusinessLayer.Mapping.dll.config

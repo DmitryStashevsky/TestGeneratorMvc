@@ -93,3 +93,4 @@ C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\UnitTests\bin\Debug\Ionic.Zip.
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\UnitTests\obj\Debug\UnitTests.pdb
+D:\Тренинг\TestGeneratorMvc\UnitTests\bin\Debug\UnitTests.dll.config

@@ -8,6 +8,9 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using TestGeneratorMvc.App_Start;
+using System.Data.Entity;
+using DataLayer.Implementations.ApplicationDbContext;
 
 namespace TestGeneratorMvc
 {
@@ -20,11 +23,17 @@ namespace TestGeneratorMvc
         {
             AreaRegistration.RegisterAllAreas();
 
+            Database.SetInitializer(new CreateDatabaseIfNotExists<TestGeneratorDbContext>());
+            using (var context = DependencyResolver.Current.GetService<DbContext>())
+            {
+                context.Database.Initialize(true);
+            }
+
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
+            AuthConfig.RegisterAuth();
             BusinessLayerMapper.Map(DependencyResolver.Current.GetService<ITagService>());
         }
     }

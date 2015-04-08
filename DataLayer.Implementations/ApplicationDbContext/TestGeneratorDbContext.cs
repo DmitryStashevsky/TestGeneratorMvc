@@ -10,10 +10,11 @@ namespace DataLayer.Implementations.ApplicationDbContext
 {
     public class TestGeneratorDbContext : DbContext
     {
+        public TestGeneratorDbContext() { }
+
         public TestGeneratorDbContext(string connectionString = "DefaultConnection")
             : base(connectionString)
         {
-            Database.SetInitializer(new CreateDatabaseIfNotExists<TestGeneratorDbContext>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

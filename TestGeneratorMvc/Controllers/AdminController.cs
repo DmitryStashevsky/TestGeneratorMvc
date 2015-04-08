@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace TestGeneratorMvc.Controllers
 {
+    [Authorize(Roles="Admin, MainAdmin")]
     public class AdminController : Controller
     {
         public ActionResult Index()
