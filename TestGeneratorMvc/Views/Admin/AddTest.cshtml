@@ -42,9 +42,9 @@
                 </div>
             </div>
         </div>
-        <div class="pull-right col-md-6 same-height" ui-on-Drop="onDrop($event,$data,test.Questions)">
+        <div class="pull-right col-md-6 same-height" ui-on-Drop="onDrop($event,$data, selectedQuestions)">
             <h2 class="sub-header">Questions for test</h2>
-            <div ng-repeat="question in test.Questions track by $index" ui-draggable="true" draggable drag="question" on-drop-success="dropSuccessHandler($event,$index,test.Questions)">
+            <div ng-repeat="question in selectedQuestions track by $index" ui-draggable="true" draggable drag="question" on-drop-success="dropSuccessHandler($event,$index,selectedQuestions)">
                 <div class="panel panel-default" >
                     <div class="panel-heading">
                         <span>Tags: {{question.Tags}}</span>

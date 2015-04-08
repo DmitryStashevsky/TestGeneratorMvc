@@ -32,5 +32,10 @@ namespace BusinessLayer.Services
         {
             return Mapper.Map<List<ApiShowTestExportWithTestInfo>>(m_TestExportRepository.GetAllWithTest());
         }
+
+        public int GetTestExportsCount()
+        {
+            return m_TestExportRepository.Count;
+        }
     }
 }

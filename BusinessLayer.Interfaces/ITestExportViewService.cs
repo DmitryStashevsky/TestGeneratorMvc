@@ -12,5 +12,7 @@ namespace BusinessLayer.Interfaces
         List<ApiShowTestWithTestExport> GetTestExportsForTests();
 
         List<ApiShowTestExportWithTestInfo> GetTestExportsWithTestInfo();
+
+        int GetTestExportsCount();
     }
 }

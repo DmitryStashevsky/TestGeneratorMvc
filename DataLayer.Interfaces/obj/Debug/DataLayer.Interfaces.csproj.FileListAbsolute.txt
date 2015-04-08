@@ -19,3 +19,10 @@ C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.dll
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug\DataLayer.Interfaces.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug\DataLayer.Interfaces.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug\DataLayer.Model.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\bin\Debug\DataLayer.Model.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\obj\Debug\DataLayer.Interfaces.pdb

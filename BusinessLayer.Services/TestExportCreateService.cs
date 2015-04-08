@@ -35,7 +35,8 @@ namespace BusinessLayer.Services
                 TestExport testExport = new TestExport();
                 testExport.NumberOfVariants = createTextExport.NumberOfVariants;
                 testExport.Path = helper.PathToZipArchive;
-                testExport.VirtualPath = string.Format("/Export/{0}", helper.ZipArchiveName);
+                //TO-DO correct path
+                testExport.VirtualPath = string.Format("/Exports/{0}", helper.ZipArchiveName);
                 testExport.TestId = createTextExport.TestId;
                 var testExportFromDb = m_TestExportRepository.Create(testExport);
                 m_UnitOfWork.SaveChanges();

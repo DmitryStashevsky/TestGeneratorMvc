@@ -15,7 +15,7 @@ adminApplication.controller('QuestionController', ['$scope', 'webApiFactory', 'N
     $scope.getAnswersForQuestion = function (index) {
         var question = $scope.questions[index];
         if (!question.answers) {
-            webApiFactory.GetAnswersForQuestionWithRightValues(question.Id, function (data) {
+            webApiFactory.getAnswersForQuestionWithRightValues(question.Id, function (data) {
                 question.answers = data;
             });
         }

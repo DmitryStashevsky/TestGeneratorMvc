@@ -25,7 +25,7 @@ adminApplication.factory('webApiFactory', function ($http) {
             }) 
     }; 
 
-    webApiFactory.GetAnswersForQuestionWithRightValues = function (questionId, callback) {
+    webApiFactory.getAnswersForQuestionWithRightValues = function (questionId, callback) {
         return $http({
             url: "/api/Question/GetAnswersForQuestionWithRightValues",
             method: "GET",
@@ -56,9 +56,9 @@ adminApplication.factory('webApiFactory', function ($http) {
             })
     };
 
-    webApiFactory.getQuestionsForTest = function (GetQuestionsForTest, callback) {
+    webApiFactory.getQuestionsForTest = function (testId, callback) {
         return $http({
-            url: "/api/Test/ПetQuestionsForTest",
+            url: "/api/Test/GetQuestionsForTest",
             method: "GET",
             params: { testId: testId }
         }).success(function (data) {
@@ -68,6 +68,48 @@ adminApplication.factory('webApiFactory', function ($http) {
 
     webApiFactory.getQuestionsForTestCreate = function (callback) {
         return $http.get("/api/Test/GetQuestionsForTestCreate")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.addTestExport = function (testExport, callback) {
+        return $http.post("/api/TestExport/AddTestExport", testExport)
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.deleteTestExport = function (testExport, callback) {
+        return $http.post("/api/TestExport/DeleteTestExport", testExport)
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getTestExports = function (callback) {
+        return $http.get("/api/TestExport/GetTestExports")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getTestExportsCount = function (callback) {
+        return $http.get("/api/TestExport/GetTestExportsCount")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getTestsForTestExportCreate = function (callback) {
+        return $http.get("/api/TestExport/GetTestsForTestExportCreate")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getTestExportsWithTestInfo = function (callback) {
+        return $http.get("/api/TestExport/GetTestExportsWithTestInfo")
             .success(function (data) {
                 callback(data);
             })

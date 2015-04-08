@@ -1,7 +1,10 @@
 ﻿/// <reference path="../_references.js" />
 
-adminApplication.controller('AddTestController', ['$scope', 'webApiFactory', 'Notification', function ($scope, webApiFactory, Notification, drag) {
+adminApplication.controller('AddTestController', ['$scope', 'webApiFactory', 'Notification', function ($scope, webApiFactory, Notification) {
     $scope.addTest = function (test) {
+        test.Questions = $.map($scope.selectedQuestions, function (elem) {
+            return elem.Id;
+        })
         webApiFactory.addTest(test, function (data) {
             Notification.success(data);
         });
@@ -22,7 +25,7 @@ adminApplication.controller('AddTestController', ['$scope', 'webApiFactory', 'No
     };
 
     $scope.test = {};
-    $scope.test.Questions = [];
+    $scope.selectedQuestions = [];
 
     $scope.getQuestionsForTestCreate();
 }]);

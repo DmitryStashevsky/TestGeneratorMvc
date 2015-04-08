@@ -52,6 +52,7 @@
     <Compile Include="ApiShowTest.cs" />
     <Compile Include="ApiShowTestExport.cs" />
     <Compile Include="ApiShowTestExportWithTestInfo.cs" />
+    <Compile Include="ApiShowTestForTestExportCreate.cs" />
     <Compile Include="ApiShowTestWithTestExport.cs" />
     <Compile Include="ApiTag.cs" />
     <Compile Include="ApiShowTestExportAfterCreate.cs" />
