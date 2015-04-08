@@ -22,13 +22,13 @@
                     <textarea class="form-control" rows="2" placeholder="Enter answer text" ng-model="answer.text" required></textarea>
                 </div>
                 <div class="panel-footer">
-                     <span>Is correct: </span><input type="checkbox" ng-model="answer.isCorrect"/>
-                     <input type="button" value="Remove" class="btn btn-danger pull-right" ng-click="deleteAnswer($index)" />
+                     <button type="button" class="btn btn-danger" ng-click="deleteAnswer($index)">Remove</button>
+                     <span>Is correct: <input type="checkbox" ng-model="answer.isCorrect"/></span>
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <input type="button" value="Save question" class="btn btn-success pull-right" ng-click="addQuestion(question)" ng-show="questionForm.$valid" />
+            <button type="button" class="btn btn-success pull-right" ng-click="addQuestion(question)" ng-show="questionForm.$valid">Save question</button>
         </div>
     </form>
 </div>

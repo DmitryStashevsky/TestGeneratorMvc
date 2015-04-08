@@ -12,12 +12,12 @@
                 <span>Tags: {{question.Tags}}</span>
             </div>
             <div class="panel-body">
-                <p>Tags: {{question.Text}}</p>
+                <p>{{question.Text}}</p>
             </div>
             <div class="panel-footer">
-                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#additionalInfo{{$index}}" >Show additional info</button>
+                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#additionalInfo{{$index}}">Show additional info</button>
                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answers{{$index}}" ng-click="getAnswersForQuestion($index)">Show answers</button>
-                <button type="button" class="btn btn-warning"/>Edit</button>
+                <button type="button" class="btn btn-warning">Edit</button>
                 <button type="button" class="btn btn-danger ">Delete</button>
             </div>
         </div>
