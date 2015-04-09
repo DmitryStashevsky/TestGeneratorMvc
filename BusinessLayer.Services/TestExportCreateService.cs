@@ -18,12 +18,14 @@ namespace BusinessLayer.Services
         private IUnitOfWork m_UnitOfWork;
         private ITestRepository m_TestRepository;
         private ITestExportRepository m_TestExportRepository;
+        private IUserRepository m_UserRepository;
 
         public TestExportCreateService(IUnitOfWork unitOfWork)
         {
             m_UnitOfWork = unitOfWork;
             m_TestRepository = m_UnitOfWork.GetRepository<ITestRepository>();
             m_TestExportRepository = m_UnitOfWork.GetRepository<ITestExportRepository>();
+            m_UserRepository = m_UnitOfWork.GetRepository<IUserRepository>();
         }
 
         public ApiShowTestExportAfterCreate Export(ApiCreateTestExport createTextExport, string path)
@@ -37,7 +39,11 @@ namespace BusinessLayer.Services
                 testExport.Path = helper.PathToZipArchive;
                 //TO-DO correct path
                 testExport.VirtualPath = string.Format("/Exports/{0}", helper.ZipArchiveName);
+                //atach user
+                //var user = new User { Id = createTextExport.UserId }
+                //m_UserRepository.Attach(new User { Id = createTextExport.UserId });
                 testExport.TestId = createTextExport.TestId;
+                testExport.OwnerId = createTextExport.OwnerId;
                 var testExportFromDb = m_TestExportRepository.Create(testExport);
                 m_UnitOfWork.SaveChanges();
                 return Mapper.Map<ApiShowTestExportAfterCreate>(testExportFromDb);

@@ -22,7 +22,8 @@ namespace DataLayer.Implementations.Mapping
                     e.MapLeftKey("UserAnswerId");
                     e.MapRightKey("AnswerId");
                 });
-            HasRequired(e => e.Question).WithMany(e => e.UserAnswers).HasForeignKey(e => e.QuestionId);
+
+            HasRequired(e => e.Question).WithMany().HasForeignKey(e => e.QuestionId).WillCascadeOnDelete(false);
         }
     }
 }

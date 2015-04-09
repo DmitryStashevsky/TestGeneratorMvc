@@ -12,3 +12,4 @@ D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\bin\Debug\DataLayer.ApiMod
 D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\bin\Debug\DataLayer.ApiModel.pdb
 D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.dll
 D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Debug\DataLayer.ApiModel.csprojResolveAssemblyReference.cache

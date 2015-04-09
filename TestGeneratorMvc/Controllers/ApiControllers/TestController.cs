@@ -7,9 +7,11 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
+using nonintanon.Security;
 
 namespace TestGeneratorMvc.Controllers.ApiControllers
 {
+    [System.Web.Http.Authorize(Roles = "Trainer, Admin")]
     public class TestController : ApiController
     {
         private ITestCreateService m_TestCreateService;
@@ -46,6 +48,7 @@ namespace TestGeneratorMvc.Controllers.ApiControllers
         [System.Web.Http.HttpPost]
         public string AddTest(ApiCreateTest test)
         {
+            test.OwnerId = WebSecurity.GetUserId(User.Identity.Name);
             return m_TestCreateService.AddTest(test);
         }
     }

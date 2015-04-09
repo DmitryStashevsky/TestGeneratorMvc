@@ -16,9 +16,14 @@ namespace DataLayer.Implementations.Mapping
 
             HasKey(e => e.Id);
 
-            Property(e => e.Name).IsRequired();
+            Property(e => e.UserName).IsRequired();
 
-            HasMany(e => e.UserAnswers).WithRequired(e => e.User).HasForeignKey(e => e.UserId).WillCascadeOnDelete();
+            HasMany(e => e.Tests).WithMany(e => e.Users).Map(e =>
+                {
+                    e.ToTable("TestUsers");
+                    e.MapLeftKey("UserId");
+                    e.MapRightKey("TestId");
+                });
         }
     }
 }

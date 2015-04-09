@@ -9,6 +9,7 @@ namespace DataLayer.ApiModel
     public class ApiCreateTest
     {
         public string Name { get; set; }
+        public Guid OwnerId { get; set; }
         public int CountOfQuestions { get; set; }
         public int CountOfAnswers { get; set; }
         public int CountOfRightAnswers { get; set; }

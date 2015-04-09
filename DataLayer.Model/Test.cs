@@ -18,14 +18,15 @@ namespace DataLayer.Model
             : base()
         {
             Questions = new List<Question>();
-            Users = new List<User>();
             TestExports = new List<TestExport>();
+            Users = new List<User>();
         }
 
         public List<Question> Questions { get; set; }
-
+        public List<TestExport> TestExports { get; set; }
         public List<User> Users { get; set; }
 
-        public List<TestExport> TestExports { get; set; }
+        public User Owner { get; set; }
+        public Guid OwnerId { get; set; }
     }
 }

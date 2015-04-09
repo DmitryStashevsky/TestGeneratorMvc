@@ -28,12 +28,7 @@ namespace DataLayer.Implementations.Mapping
                     e.MapRightKey("QuestionId");
                 });
 
-            HasMany(e => e.Users).WithMany(e => e.Tests).Map(e =>
-                {
-                    e.ToTable("UserAndTest");
-                    e.MapLeftKey("TestId");
-                    e.MapRightKey("UserId");
-                });
+            HasRequired(e => e.Owner).WithMany(e => e.OwnerTests).HasForeignKey(e => e.OwnerId).WillCascadeOnDelete(false);
         }
     }
 }

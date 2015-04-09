@@ -10,6 +10,7 @@ namespace DataLayer.ApiModel
     {
         public string Text { get; set; }
         public int Complexity { get; set; }
+        public Guid OwnerId { get; set; }
         public string Tags { get; set; }
         public List<ApiCreateAnswer> Answers { get; set; }
     }

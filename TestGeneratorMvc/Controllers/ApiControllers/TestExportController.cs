@@ -8,9 +8,11 @@ using System.Web.Http;
 using System.Web.Mvc;
 using BusinessLayer.Interfaces;
 using DataLayer.ApiModel;
+using nonintanon.Security;
 
 namespace TestGeneratorMvc.Controllers.ApiControllers
 {
+    [System.Web.Http.Authorize(Roles = "Trainer, Admin")]
     public class TestExportController : ApiController
     {
         private ITestExportCreateService m_TestExportCreateService;
@@ -50,6 +52,7 @@ namespace TestGeneratorMvc.Controllers.ApiControllers
         [System.Web.Http.HttpPost]
         public ApiShowTestExportAfterCreate AddTestExport(ApiCreateTestExport testExport)
         {
+            testExport.OwnerId = WebSecurity.GetUserId(User.Identity.Name);
             String path = HttpContext.Current.Server.MapPath("~/Exports/");
             return m_TestExportCreateService.Export(testExport, path);
         }

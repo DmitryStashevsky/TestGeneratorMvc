@@ -38,5 +38,8 @@ namespace DataLayer.Model
 
         public Question ParentQuestion { get; set; }
         public Guid? ParentQuestionId { get; set; }
+
+        public User Owner { get; set; }
+        public Guid OwnerId { get; set; }
     }
 }

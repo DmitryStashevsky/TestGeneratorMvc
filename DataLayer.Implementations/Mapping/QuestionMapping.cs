@@ -28,6 +28,8 @@ namespace DataLayer.Implementations.Mapping
             HasOptional(e => e.ParentQuestion).WithMany().HasForeignKey(e => e.ParentQuestionId);
 
             HasMany(e => e.Answers).WithRequired(e => e.Question).HasForeignKey(e => e.QuestionId).WillCascadeOnDelete(false);
+
+            HasRequired(e => e.Owner).WithMany(e => e.Questions).HasForeignKey(e => e.OwnerId);
         }
     }
 }

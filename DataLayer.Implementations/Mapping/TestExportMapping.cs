@@ -21,11 +21,9 @@ namespace DataLayer.Implementations.Mapping
             Property(e => e.NumberOfVariants).IsRequired();
             Property(e => e.Created).IsRequired().HasColumnType("datetime2");
 
-            HasRequired(e => e.Test).WithMany(e => e.TestExports).HasForeignKey(e => e.TestId);
+            HasRequired(e => e.Test).WithMany(e => e.TestExports).HasForeignKey(e => e.TestId).WillCascadeOnDelete(false);
 
-            //TO-DO change hasrequired
-            HasOptional(e => e.User).WithMany(e => e.TestExports).HasForeignKey(e => e.UserId);
+            HasRequired(e => e.Owner).WithMany(e => e.TestExports).HasForeignKey(e => e.OwnerId).WillCascadeOnDelete(false);
         }
-
     }
 }

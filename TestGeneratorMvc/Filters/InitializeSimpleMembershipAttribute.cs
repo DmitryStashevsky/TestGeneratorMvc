@@ -36,7 +36,7 @@ namespace TestGeneratorMvc.Filters
                         }
                     }
 
-                    WebSecurity.InitializeDatabaseConnection("DefaultConnection", "User", "Id", "Name",
+                    WebSecurity.InitializeDatabaseConnection("DefaultConnection", "User", "Id", "UserName",
                         autoCreateTables: true);
 
                 }

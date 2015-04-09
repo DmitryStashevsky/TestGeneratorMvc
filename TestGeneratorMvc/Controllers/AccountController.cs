@@ -79,6 +79,7 @@ namespace TestGeneratorMvc.Controllers
                 try
                 {
                     WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { Id = Guid.NewGuid() });
+                    Roles.AddUserToRole(model.UserName, "User");
                     WebSecurity.Login(model.UserName, model.Password);
                     return RedirectToAction("Index", "Home");
                 }

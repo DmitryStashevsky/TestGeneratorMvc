@@ -7,9 +7,11 @@ using System.Web.Http;
 using System.Web.Mvc;
 using BusinessLayer.Interfaces;
 using DataLayer.ApiModel;
+using nonintanon.Security;
 
 namespace TestGeneratorMvc.Controllers.ApiControllers
 {
+    [System.Web.Http.Authorize(Roles="Trainer, Admin")]
     public class QuestionController : ApiController
     {
         private IQuestionCreateService m_QuestionCreateService;
@@ -43,6 +45,7 @@ namespace TestGeneratorMvc.Controllers.ApiControllers
         [System.Web.Http.HttpPost]
         public string AddQuestion(ApiCreateQuestion question)
         {
+            question.OwnerId = WebSecurity.GetUserId(User.Identity.Name);
             return m_QuestionCreateService.AddQuestion(question);
         }
     }

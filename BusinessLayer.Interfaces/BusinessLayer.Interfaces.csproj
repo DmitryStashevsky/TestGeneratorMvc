@@ -49,6 +49,7 @@
     <Compile Include="ITestExportEditService.cs" />
     <Compile Include="ITestExportViewService.cs" />
     <Compile Include="ITestViewService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

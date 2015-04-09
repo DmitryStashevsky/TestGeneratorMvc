@@ -11,8 +11,6 @@ namespace DataLayer.Interfaces
     {
         List<Test> GetAllWithUsers();
 
-        List<Test> GetAllWithTestExport();
-
         Test GetByIdWithQuestionsAndAnswers(Guid id);
     }
 }

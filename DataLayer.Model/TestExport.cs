@@ -22,7 +22,7 @@ namespace DataLayer.Model
         public Test Test { get; set; }
         public Guid TestId { get; set; }
 
-        public User User { get; set; }
-        public Guid? UserId { get; set; }
+        public User Owner { get; set; }
+        public Guid OwnerId { get; set; }
     }
 }

@@ -10,5 +10,6 @@ namespace DataLayer.ApiModel
     {
         public int NumberOfVariants { get; set; }
         public Guid TestId { get; set; }
+        public Guid OwnerId { get; set; }
     }
 }
