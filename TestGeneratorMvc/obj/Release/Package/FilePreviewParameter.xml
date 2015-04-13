@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="testgenerator" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Тренинг\\TestGeneratorMvc\\TestGeneratorMvc\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Тренинг\\TestGeneratorMvc\\TestGeneratorMvc\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="testgenerator/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Тренинг\\TestGeneratorMvc\\TestGeneratorMvc\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="DataLayer.Implementations.ApplicationDbContext.TestGeneratorDbContext-Web.config Connection String" description="" value="Data Source=chxubekqo0.database.windows.net,1433;AttachDbFilename=C:\Users\dmitrystashevsky\aspnet-TestGeneratorMvc-20150407171111.mdf;Persist Security Info=True;User ID=dmitrystash;Password=Xchicony24!" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Тренинг\\TestGeneratorMvc\\TestGeneratorMvc\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DataLayer.Implementations.ApplicationDbContext.TestGeneratorDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=chxubekqo0.database.windows.net,1433;AttachDbFilename=C:\Users\dmitrystashevsky\aspnet-TestGeneratorMvc-20150407171111.mdf;Persist Security Info=True;User ID=dmitrystash;Password=Xchicony24!" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Тренинг\\TestGeneratorMvc\\TestGeneratorMvc\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

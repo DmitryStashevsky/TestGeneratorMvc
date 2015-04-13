@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "TestExports";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div ng-controller="TestExportController">
+    <h1 class="page-header">Test exports</h1>
+    <h2 class="sub-header">Tests export count - {{testExportsCount}}</h2>
+    <div ng-repeat="testExport in testExports">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span> {{testExport.Test.Name}}</span>
+                <span class="pull-right"> {{testExport.Created}}</span>
+            </div>
+            <div class="panel-body">
+                <p>Count of variants: {{testExport.NumberOfVariants}}</p>
+                <p>Count of questions: {{testExport.Test.CountOfQuestions}}</p>
+                <p>Count of answers: {{testExport.Test.CountOfAnswers}}</p>
+                <p>Count of right answers: {{testExport.Test.CountOfRightAnswers}}</p>
+            </div>
+            <div class="panel-footer">
+                <a class="btn btn-success" href="{{testExport.VirtualPath}}">Download</a>
+                <button type="button" class="btn btn-danger" ng-click="deleteTestExport($index)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

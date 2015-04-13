@@ -1,0 +1,19 @@
+﻿@if (Request.IsAuthenticated) {
+    <ul class="nav nav-pills pull-right">
+        <li role="presentation">
+            @Html.ActionLink("Hello, "+User.Identity.Name, "Manage", "Account", null, htmlAttributes: new { @title = "Manage" })
+        </li>
+        <li role="presentation">
+            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+        </li>
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
+            @Html.AntiForgeryToken()
+            }
+    </ul>
+} else {
+    <ul class="nav nav-pills pull-right">
+        <li role="presentation">@Html.ActionLink("Register", "Register", "Account")</li>
+        <li role="presentation">@Html.ActionLink("Log in", "Login", "Account")</li>
+    </ul>
+}
+

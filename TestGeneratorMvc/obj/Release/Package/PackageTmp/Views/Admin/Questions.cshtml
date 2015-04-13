@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Questions";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div ng-controller="QuestionController">
+    <h1 class="page-header">Questions</h1>
+    <h2 class="sub-header">Questions count - {{questionsCount}}</h2>
+    <div ng-repeat="question in questions">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span>Tags: {{question.Tags}}</span>
+            </div>
+            <div class="panel-body">
+                <p>{{question.Text}}</p>
+            </div>
+            <div class="panel-footer">
+                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#additionalInfo{{$index}}">Show additional info</button>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answers{{$index}}" ng-click="getAnswersForQuestion($index)">Show answers</button>
+                <button type="button" class="btn btn-warning">Edit</button>
+                <button type="button" class="btn btn-danger ">Delete</button>
+            </div>
+        </div>
+        <div class="panel panel-default collapse" id="additionalInfo{{$index}}">
+            <div class="panel-heading">
+                <span>Additional info:</span>
+            </div>
+            <div class="panel-body">
+                <p>Valid from: {{question.ValidFrom}}</p>
+                <p ng-show="question.ValidTo">Valid to: {{question.ValidTo}}</p>
+                <p ng-show="question.IsModified">Is modified: {{question.IsModified}}</p>
+            </div>
+        </div>
+        <div class="panel panel-info collapse" id="answers{{$index}}">
+            <div class="panel-heading">
+                <span>Answers:</span>
+            </div>
+            <div class="panel-body">
+                <p ng-repeat="answer in question.answers" ng-class="{'bg-success' : answer.IsCorrect}">{{$index + 1}}) {{answer.Text}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/adminApp")
+}

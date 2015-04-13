@@ -1,0 +1,10 @@
+﻿<div class="jumbotron">
+    <h1>Test generator portal</h1>
+    <p>
+        @if (User.IsInRole("Admin") || User.IsInRole("Trainer"))
+        {
+            @Html.ActionLink("Go to admin area", "Index", "Admin", null ,htmlAttributes: new { @class="btn btn-lg btn-success", @role="button" })
+        }
+    </p>
+    <p>
+</div>
