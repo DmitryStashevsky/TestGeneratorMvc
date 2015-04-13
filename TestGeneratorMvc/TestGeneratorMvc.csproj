@@ -225,6 +225,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-TestGeneratorMvc-20150407171111.mdf" />
+    <Content Include="App_Data\aspnet-TestGeneratorMvc-20150407171111_log.ldf">
+      <DependentUpon>aspnet-TestGeneratorMvc-20150407171111.mdf</DependentUpon>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\angular-ui-notification.css" />
     <Content Include="Content\angular-ui-notification.html" />
@@ -377,9 +381,7 @@
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
