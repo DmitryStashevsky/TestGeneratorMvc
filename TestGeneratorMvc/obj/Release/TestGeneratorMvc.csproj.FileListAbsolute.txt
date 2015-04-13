@@ -1,4 +1,3 @@
-D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\AutoMapper.Net4.dll
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\TestGeneratorMvc.dll
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\TestGeneratorMvc.pdb
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\Antlr3.Runtime.dll
@@ -121,3 +120,4 @@ D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\zh-Hant\System.Spatial.r
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\obj\Release\TestGeneratorMvc.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\obj\Release\TestGeneratorMvc.dll
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\obj\Release\TestGeneratorMvc.pdb
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\System.ComponentModel.DataAnnotations.dll
