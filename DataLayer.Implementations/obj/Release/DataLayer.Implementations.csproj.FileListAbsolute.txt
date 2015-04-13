@@ -1,0 +1,12 @@
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\DataLayer.Implementations.dll.config
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\DataLayer.Implementations.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\DataLayer.Implementations.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\DataLayer.Interfaces.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\DataLayer.Model.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\EntityFramework.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\DataLayer.Interfaces.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\DataLayer.Model.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\EntityFramework.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\obj\Release\DataLayer.Implementations.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\obj\Release\DataLayer.Implementations.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\obj\Release\DataLayer.Implementations.pdb

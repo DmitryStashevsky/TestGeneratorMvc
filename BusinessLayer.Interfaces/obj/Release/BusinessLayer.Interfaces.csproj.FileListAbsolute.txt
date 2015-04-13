@@ -1,0 +1,9 @@
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Release\BusinessLayer.Interfaces.dll
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Release\BusinessLayer.Interfaces.pdb
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Release\DataLayer.ApiModel.dll
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Release\DataLayer.Model.dll
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Release\DataLayer.ApiModel.pdb
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\bin\Release\DataLayer.Model.pdb
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\obj\Release\BusinessLayer.Interfaces.csprojResolveAssemblyReference.cache
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\obj\Release\BusinessLayer.Interfaces.dll
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Interfaces\obj\Release\BusinessLayer.Interfaces.pdb
