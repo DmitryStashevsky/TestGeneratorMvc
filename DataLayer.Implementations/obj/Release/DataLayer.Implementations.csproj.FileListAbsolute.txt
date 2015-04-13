@@ -10,3 +10,16 @@ D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\EntityF
 D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\obj\Release\DataLayer.Implementations.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\obj\Release\DataLayer.Implementations.dll
 D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\obj\Release\DataLayer.Implementations.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.Helpers.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.Mvc.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.Razor.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.WebPages.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.WebPages.Razor.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.Helpers.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.Mvc.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.Razor.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.WebPages.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Release\System.Web.WebPages.Razor.xml

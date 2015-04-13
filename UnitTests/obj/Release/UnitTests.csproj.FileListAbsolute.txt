@@ -31,3 +31,5 @@ D:\Тренинг\TestGeneratorMvc\UnitTests\bin\Release\Ionic.Zip.xml
 D:\Тренинг\TestGeneratorMvc\UnitTests\obj\Release\UnitTests.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\UnitTests\obj\Release\UnitTests.dll
 D:\Тренинг\TestGeneratorMvc\UnitTests\obj\Release\UnitTests.pdb
+D:\Тренинг\TestGeneratorMvc\UnitTests\bin\Release\System.Web.Mvc.dll
+D:\Тренинг\TestGeneratorMvc\UnitTests\bin\Release\System.Web.Mvc.xml
