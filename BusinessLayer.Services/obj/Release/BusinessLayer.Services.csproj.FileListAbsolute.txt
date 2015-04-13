@@ -30,3 +30,5 @@ D:\Тренинг\TestGeneratorMvc\BusinessLayer.Services\bin\Release\Ionic.Zip.
 D:\Тренинг\TestGeneratorMvc\BusinessLayer.Services\obj\Release\BusinessLayer.Services.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\BusinessLayer.Services\obj\Release\BusinessLayer.Services.dll
 D:\Тренинг\TestGeneratorMvc\BusinessLayer.Services\obj\Release\BusinessLayer.Services.pdb
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Services\bin\Release\System.Web.Mvc.dll
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Services\bin\Release\System.Web.Mvc.xml
