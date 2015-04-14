@@ -1,7 +1,0 @@
-D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\bin\Release\DataLayer.Interfaces.dll
-D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\bin\Release\DataLayer.Interfaces.pdb
-D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\bin\Release\DataLayer.Model.dll
-D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\bin\Release\DataLayer.Model.pdb
-D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\obj\Release\DataLayer.Interfaces.csprojResolveAssemblyReference.cache
-D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\obj\Release\DataLayer.Interfaces.dll
-D:\Тренинг\TestGeneratorMvc\DataLayer.Interfaces\obj\Release\DataLayer.Interfaces.pdb

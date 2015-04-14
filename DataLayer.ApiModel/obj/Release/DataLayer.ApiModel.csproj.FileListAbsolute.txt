@@ -1,5 +1,0 @@
-D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\bin\Release\DataLayer.ApiModel.dll
-D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\bin\Release\DataLayer.ApiModel.pdb
-D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Release\DataLayer.ApiModel.dll
-D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Release\DataLayer.ApiModel.pdb
-D:\Тренинг\TestGeneratorMvc\DataLayer.ApiModel\obj\Release\DataLayer.ApiModel.csprojResolveAssemblyReference.cache
