@@ -11,6 +11,8 @@ namespace DataLayer.Interfaces
     {
         List<Question> GetAllWithTag();
 
+        List<Question> GetAllWithTagAndUser();
+
         List<Question> GetQuestionsForTest(Guid testId);
 
         List<Question> GetValidQuestionsForTest(Guid testId);

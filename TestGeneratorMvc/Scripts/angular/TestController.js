@@ -1,8 +1,8 @@
 ﻿/// <reference path="../_references.js" />
 
 adminApplication.controller('TestController', ['$scope', 'webApiFactory', 'Notification', function ($scope, webApiFactory, Notification) {
-    $scope.getTests = function () {
-        webApiFactory.getTests(function (data) {
+    $scope.getTestsWithOwner = function () {
+        webApiFactory.getTestsWithOwner(function (data) {
             $scope.tests = data
         });
     };
@@ -22,6 +22,6 @@ adminApplication.controller('TestController', ['$scope', 'webApiFactory', 'Notif
         }
     };
 
-    $scope.getTests();
+    $scope.getTestsWithOwner();
     $scope.getTestsCount();
 }]);

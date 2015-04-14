@@ -30,6 +30,11 @@ namespace TestGeneratorMvc.Controllers.ApiControllers
             return m_TestViewService.GetTests();
         }
 
+        public List<ApiShowTestWithOwner> GetTestsWithOwner()
+        {
+            return m_TestViewService.GetTestsWithOwner();
+        }
+
         public int GetTestsCount()
         {
             return m_TestViewService.GetTestsCount();

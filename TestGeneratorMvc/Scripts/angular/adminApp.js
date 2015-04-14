@@ -18,6 +18,13 @@ adminApplication.factory('webApiFactory', function ($http) {
             })
     };
 
+    webApiFactory.getQuestionsWithUser = function (callback) {
+        return $http.get("/api/Question/GetQuestionsWithUser")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
     webApiFactory.getQuestionsCount = function (callback) {
         return $http.get("/api/Question/GetQuestionsCount")
             .success(function (data) {
@@ -44,6 +51,13 @@ adminApplication.factory('webApiFactory', function ($http) {
 
     webApiFactory.getTests = function (callback) {
         return $http.get("/api/Test/GetTests")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getTestsWithOwner = function (callback) {
+        return $http.get("/api/Test/GetTestsWithOwner")
             .success(function (data) {
                 callback(data);
             })
@@ -110,6 +124,20 @@ adminApplication.factory('webApiFactory', function ($http) {
 
     webApiFactory.getTestExportsWithTestInfo = function (callback) {
         return $http.get("/api/TestExport/GetTestExportsWithTestInfo")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getUsersWithInfo = function (callback) {
+        return $http.get("/api/User/GetUsersWitnInfo")
+            .success(function (data) {
+                callback(data);
+            })
+    };
+
+    webApiFactory.getUsersCount = function (callback) {
+        return $http.get("/api/User/GetUsersCount")
             .success(function (data) {
                 callback(data);
             })

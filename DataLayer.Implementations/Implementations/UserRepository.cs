@@ -15,5 +15,11 @@ namespace DataLayer.Implementations.Implementations
             : base(context)
         {
         }
+
+        public List<User> GetAllWithInfo()
+        {
+            //TO-DO user another way to get count of linked entities
+            return m_Context.Set<User>().AsNoTracking().Include(e => e.Questions).Include(e => e.TestExports).Include(e => e.OwnerTests).Include(e => e.Tests).ToList();
+        }
     }
 }

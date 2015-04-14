@@ -121,4 +121,3 @@ D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\obj\Release\TestGeneratorMvc
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\obj\Release\TestGeneratorMvc.dll
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\obj\Release\TestGeneratorMvc.pdb
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\System.ComponentModel.DataAnnotations.dll
-D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\AutoMapper.Net4.dll

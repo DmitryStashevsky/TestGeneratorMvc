@@ -13,15 +13,15 @@
             </div>
             <div class="form-group">
                 <label for="questionCount">Count of questions</label>
-                <input type="number" class="form-control" id="questionCount" placeholder="Count for questions" ng-model="test.CountOfQuestions" required />
+                <input type="number" class="form-control" id="questionCount" min="1" placeholder="Count for questions" ng-model="test.CountOfQuestions" required />
             </div>
             <div class="form-group">
                 <label for="answerCount">Count of answers</label>
-                <input type="number" class="form-control" id="answerCount" placeholder="Count for answers" ng-model="test.CountOfAnswers" required />
+                <input type="number" class="form-control" id="answerCount" min="2" placeholder="Count for answers" ng-model="test.CountOfAnswers" required />
             </div>
             <div class="form-group">
                 <label for="rightAnswerCount">Count of right answers</label>
-                <input type="number" class="form-control" id="rightAnswer" placeholder="Count for right answers" ng-model="test.CountOfRightAnswers" required />
+                <input type="number" class="form-control" id="rightAnswer" min="1" placeholder="Count for right answers" ng-model="test.CountOfRightAnswers" required />
             </div>
             <div class="form-group">
                 <input type="button" value="Save test" class="btn btn-success pull-right" ng-click="addTest(test)" ng-show="testForm.$valid" />

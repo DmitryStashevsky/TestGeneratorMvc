@@ -94,3 +94,5 @@ C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Services\bin\Deb
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Services\bin\Debug\AutoMapper.Net4.pdb
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Services\bin\Debug\EntityFramework.xml
 C:\Users\Dmitry\Documents\GitHub\TestGeneratorMvc\BusinessLayer.Services\bin\Debug\Ionic.Zip.xml
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Services\bin\Debug\System.Web.Mvc.dll
+D:\Тренинг\TestGeneratorMvc\BusinessLayer.Services\bin\Debug\System.Web.Mvc.xml

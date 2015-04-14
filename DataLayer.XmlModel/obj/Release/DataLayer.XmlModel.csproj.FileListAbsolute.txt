@@ -2,3 +2,4 @@ D:\Тренинг\TestGeneratorMvc\DataLayer.XmlModel\bin\Release\DataLayer.XmlM
 D:\Тренинг\TestGeneratorMvc\DataLayer.XmlModel\bin\Release\DataLayer.XmlModel.pdb
 D:\Тренинг\TestGeneratorMvc\DataLayer.XmlModel\obj\Release\DataLayer.XmlModel.dll
 D:\Тренинг\TestGeneratorMvc\DataLayer.XmlModel\obj\Release\DataLayer.XmlModel.pdb
+D:\Тренинг\TestGeneratorMvc\DataLayer.XmlModel\obj\Release\DataLayer.XmlModel.csprojResolveAssemblyReference.cache

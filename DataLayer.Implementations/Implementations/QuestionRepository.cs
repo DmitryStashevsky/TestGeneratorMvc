@@ -21,6 +21,11 @@ namespace DataLayer.Implementations.Implementations
             return m_Context.Set<Question>().AsNoTracking().Include(e => e.Tags).ToList();
         }
 
+        public List<Question> GetAllWithTagAndUser()
+        {
+            return m_Context.Set<Question>().AsNoTracking().Include(e => e.Tags).Include(e => e.Owner).ToList();
+        }
+
         public List<Question> GetQuestionsForTest(Guid testId)
         {
             return m_Context.Set<Question>().AsNoTracking().Where(e => e.Tests.Any(t => t.Id == testId)).ToList();

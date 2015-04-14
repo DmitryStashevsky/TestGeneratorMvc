@@ -25,6 +25,12 @@ namespace BusinessLayer.Mapping
             Mapper.CreateMap<Question, ExportQuestion>();
             Mapper.CreateMap<Test, ExportTest>();
             Mapper.CreateMap<ExportTest, ExportTestForOutput>();
+            Mapper.CreateMap<User, ApiShowUser>();
+            Mapper.CreateMap<User, ApiViewUserWithInfo>()
+                .ForMember(d => d.CreatedQuestions, s => s.MapFrom(src => src.Questions.Count))
+                .ForMember(d => d.CreatedTests, s => s.MapFrom(src => src.OwnerTests.Count))
+                .ForMember(d => d.CreatedTestExports, s => s.MapFrom(src => src.TestExports.Count))
+                .ForMember(d => d.PassedTests, s => s.MapFrom(src => src.Tests.Count));
 
             Mapper.CreateMap<TestExport, ApiShowTestExportAfterCreate>(); 
             Mapper.CreateMap<TestExport, ApiShowTestExport>();
@@ -39,6 +45,7 @@ namespace BusinessLayer.Mapping
             Mapper.CreateMap<Question, Guid>().ConvertUsing(source => source.Id);
 
             Mapper.CreateMap<Test, ApiShowTest>().ForMember(d => d.CountOfPassedUsers, s => s.MapFrom(src => src.Users.Count));
+            Mapper.CreateMap<Test, ApiShowTestWithOwner>().ForMember(d => d.CountOfPassedUsers, s => s.MapFrom(src => src.Users.Count));
 
             Mapper.CreateMap<ApiCreateTest, Test>();
             Mapper.CreateMap<ApiCreateQuestion, Question>().ForMember(d => d.Tags, s => s.Ignore());
@@ -47,9 +54,14 @@ namespace BusinessLayer.Mapping
                 .ForMember(d => d.ValidFrom, s => s.MapFrom(src => src.ValidFrom.ToString("G")))
                 .ForMember(d => d.ValidTo, s => s.MapFrom(src => (src.ValidTo.HasValue) ? src.ValidTo.Value.ToString("G") : ""))
                 .ForMember(d => d.Tags, s => s.MapFrom(src => tagService.GetTagsToString(src.Tags)));
-             Mapper.CreateMap<Question, ApiShowQuestionForTestCreate>()
-                 .ForMember(d => d.Tags, s => s.MapFrom(src => tagService.GetTagsToString(src.Tags)));
-             Mapper.CreateMap<Question, ApiShowQuestionForTestView>();
+            Mapper.CreateMap<Question, ApiShowQuestionWithUser>()
+                .ForMember(d => d.ValidFrom, s => s.MapFrom(src => src.ValidFrom.ToString("G")))
+                .ForMember(d => d.ValidTo, s => s.MapFrom(src => (src.ValidTo.HasValue) ? src.ValidTo.Value.ToString("G") : ""))
+                .ForMember(d => d.Tags, s => s.MapFrom(src => tagService.GetTagsToString(src.Tags)))
+                .ForMember(d => d.User, s => s.MapFrom(src => src.Owner));
+            Mapper.CreateMap<Question, ApiShowQuestionForTestCreate>()
+                .ForMember(d => d.Tags, s => s.MapFrom(src => tagService.GetTagsToString(src.Tags)));
+            Mapper.CreateMap<Question, ApiShowQuestionForTestView>();
         }
     }
 }

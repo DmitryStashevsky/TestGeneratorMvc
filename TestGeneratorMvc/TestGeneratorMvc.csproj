@@ -310,6 +310,7 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\bootstrap\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\4.pubxml" />
     <None Include="Properties\PublishProfiles\testgenerator - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\testgenerator - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
@@ -324,6 +325,7 @@
     <Content Include="Scripts\angular\QuestionController.js" />
     <Content Include="Scripts\angular\TestController.js" />
     <Content Include="Scripts\angular\TestExportController.js" />
+    <Content Include="Scripts\angular\UserController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -382,6 +384,7 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Admin\Users.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

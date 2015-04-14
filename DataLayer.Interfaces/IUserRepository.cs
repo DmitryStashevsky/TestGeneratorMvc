@@ -9,5 +9,6 @@ namespace DataLayer.Interfaces
 {
     public interface IUserRepository : IRepository<User>
     {
+        List<User> GetAllWithInfo();
     }
 }

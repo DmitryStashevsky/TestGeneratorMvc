@@ -224,4 +224,4 @@ D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\WebMatrix.WebData.xml
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\Org.Mentalis.Security.Cryptography.xml
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\Microsoft.Web.WebPages.OAuth.xml
 D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\Mono.Math.xml
-D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\AutoMapper.Net4.dll
+D:\Тренинг\TestGeneratorMvc\TestGeneratorMvc\bin\System.ComponentModel.DataAnnotations.dll

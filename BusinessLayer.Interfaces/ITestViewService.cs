@@ -11,6 +11,8 @@ namespace BusinessLayer.Interfaces
     {
         List<ApiShowTest> GetTests();
 
+        List<ApiShowTestWithOwner> GetTestsWithOwner();
+
         List<ApiShowTest> GetTestsWithUsers();
 
         int GetTestsCount();

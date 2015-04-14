@@ -34,3 +34,16 @@ D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\EntityFra
 D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Interfaces.pdb
 D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\DataLayer.Model.pdb
 D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\EntityFramework.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.Helpers.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.Mvc.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.Razor.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.WebPages.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.Helpers.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.Mvc.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.Razor.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.WebPages.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Тренинг\TestGeneratorMvc\DataLayer.Implementations\bin\Debug\System.Web.WebPages.Razor.xml

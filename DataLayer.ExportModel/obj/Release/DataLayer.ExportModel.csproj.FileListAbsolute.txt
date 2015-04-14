@@ -1,5 +1,4 @@
 D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\bin\Release\DataLayer.ExportModel.dll
 D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\bin\Release\DataLayer.ExportModel.pdb
-D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\obj\Release\DataLayer.ExportModel.csprojResolveAssemblyReference.cache
 D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\obj\Release\DataLayer.ExportModel.dll
 D:\Тренинг\TestGeneratorMvc\DataLayer.ExportModel\obj\Release\DataLayer.ExportModel.pdb

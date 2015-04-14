@@ -26,6 +26,7 @@
                 <span>Additional info:</span>
             </div>
             <div class="panel-body">
+                <p>Created by: {{question.User.UserName}}</p>
                 <p>Valid from: {{question.ValidFrom}}</p>
                 <p ng-show="question.ValidTo">Valid to: {{question.ValidTo}}</p>
                 <p ng-show="question.IsModified">Is modified: {{question.IsModified}}</p>

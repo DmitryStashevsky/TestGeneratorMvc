@@ -32,6 +32,11 @@ namespace TestGeneratorMvc.Controllers.ApiControllers
             return m_QuestionViewService.GetQuestions();
         }
 
+        public List<ApiShowQuestionWithUser> GetQuestionsWithUser()
+        {
+            return m_QuestionViewService.GetQuestionsWithUser();
+        }
+
         public int GetQuestionsCount()
         {
             return m_QuestionViewService.GetQuestionsCount();

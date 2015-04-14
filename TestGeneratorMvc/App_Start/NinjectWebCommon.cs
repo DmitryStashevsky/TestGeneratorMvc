@@ -87,6 +87,7 @@ namespace TestGeneratorMvc.App_Start
             kernel.Bind<ITestExportEditService>().To<TestExportEditService>().InRequestScope();
             kernel.Bind<ITestExportViewService>().To<TestExportViewService>().InRequestScope();
             kernel.Bind<ITestViewService>().To<TestViewService>().InRequestScope();
+            kernel.Bind<IUserService>().To<UserService>().InRequestScope();
         }        
     }
 }

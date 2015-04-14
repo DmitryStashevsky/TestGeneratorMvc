@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div ng-controller="UserController">
+    <h1 class="page-header">Users</h1>
+    <h2 class="sub-header">Users count - {{usersCount}}</h2>
+    <table class="table table-bordered">   
+        <thead>
+            <tr>
+                <th>UserName</th>
+                <th>CreatedQuestions</th>
+                <th>CreatedTests</th>
+                <th>CreatedTestExports</th>
+                <th>PassedTests</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr ng-repeat="user in users">
+                <td>{{user.UserName}}</td>
+                <td>{{user.CreatedQuestions}}</td>
+                <td>{{user.CreatedTests}}</td>
+                <td>{{user.CreatedTestExports}}</td>
+                <td>{{user.PassedTests}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

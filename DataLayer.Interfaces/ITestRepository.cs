@@ -9,6 +9,8 @@ namespace DataLayer.Interfaces
 {
     public interface ITestRepository : IRepository<Test>
     {
+        List<Test> GetAllWithOwner();
+
         List<Test> GetAllWithUsers();
 
         Test GetByIdWithQuestionsAndAnswers(Guid id);

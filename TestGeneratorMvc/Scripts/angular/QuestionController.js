@@ -1,8 +1,8 @@
 ﻿/// <reference path="../_references.js" />
 
 adminApplication.controller('QuestionController', ['$scope', 'webApiFactory', 'Notification', function ($scope, webApiFactory, Notification) {
-    $scope.getQuestions = function () {
-        webApiFactory.getQuestions(function (data) {
+    $scope.getQuestionsWithUser = function () {
+        webApiFactory.getQuestionsWithUser(function (data) {
             $scope.questions = data});
     };
 
@@ -21,6 +21,6 @@ adminApplication.controller('QuestionController', ['$scope', 'webApiFactory', 'N
         }
     };
 
-    $scope.getQuestions();
+    $scope.getQuestionsWithUser();
     $scope.getQuestionsCount();
 }]);

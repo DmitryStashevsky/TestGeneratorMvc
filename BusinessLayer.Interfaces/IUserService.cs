@@ -9,7 +9,11 @@ namespace BusinessLayer.Interfaces
 {
     public interface IUserService
     {
-        List<ApiViewUser> GetUsersWithRoles();
+        ApiViewUser GetUserWithRole();
+
+        List<ApiViewUserWithInfo> GetUsersWithInfo();
+
+        int GetUsersCount();
 
         string CnahgeUserRole(Guid userId, string role);
     }

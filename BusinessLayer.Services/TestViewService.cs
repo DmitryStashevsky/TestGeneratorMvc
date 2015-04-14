@@ -26,6 +26,11 @@ namespace BusinessLayer.Services
             return Mapper.Map<List<ApiShowTest>>(m_TestRepository.GetAll());
         }
 
+        public List<ApiShowTestWithOwner> GetTestsWithOwner()
+        {
+            return Mapper.Map<List<ApiShowTestWithOwner>>(m_TestRepository.GetAllWithOwner());
+        }
+
         public List<ApiShowTest> GetTestsWithUsers()
         {
             return Mapper.Map<List<ApiShowTest>>(m_TestRepository.GetAllWithUsers());

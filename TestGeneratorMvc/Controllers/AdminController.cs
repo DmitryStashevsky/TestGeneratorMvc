@@ -43,5 +43,11 @@ namespace TestGeneratorMvc.Controllers
         {
             return View();
         }
+
+        [Authorize(Roles="Admin")]
+        public ActionResult Users()
+        {
+            return View();
+        }
     }
 }
